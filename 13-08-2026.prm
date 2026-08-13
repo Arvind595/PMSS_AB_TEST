@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x003A607B    Aug 13 19:28:22 2026    C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/pmss_ab_test/pmss_ab_test.runs/impl_1/ab_check.bit
