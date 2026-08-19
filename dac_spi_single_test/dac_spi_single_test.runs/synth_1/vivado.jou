@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Aug 17 13:27:57 2026
+# Process ID         : 7412
+# Current directory  : C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/dac_spi_single_test/dac_spi_single_test.runs/synth_1
+# Command line       : vivado.exe -log ad3551r_dc_test_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ad3551r_dc_test_top.tcl
+# Log file           : C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/dac_spi_single_test/dac_spi_single_test.runs/synth_1/ad3551r_dc_test_top.vds
+# Journal file       : C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/dac_spi_single_test/dac_spi_single_test.runs/synth_1\vivado.jou
+# Running On         : RTLPC
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-14700
+# CPU Frequency      : 2112 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 16851 MB
+# Swap memory        : 6442 MB
+# Total Virtual      : 23293 MB
+# Available Virtual  : 3434 MB
+#-----------------------------------------------------------
+source ad3551r_dc_test_top.tcl -notrace

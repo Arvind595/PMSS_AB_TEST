@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: Startup failed: scratch-pad SPI readback did not return 5A
+Time: 501 us  Iteration: 0  Process: /tb_ad3551r_dc_test/stimulus  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/dac_spi_single_test/dac_spi_single_test.srcs/sim_1/imports/chatgpt/tb_ad3551r_dc_test.vhd
+$finish called at time : 501 us : File "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/dac_spi_single_test/dac_spi_single_test.srcs/sim_1/imports/chatgpt/tb_ad3551r_dc_test.vhd" Line 206

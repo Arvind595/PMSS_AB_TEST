@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_ad3551r_dc_test_behav/xsimk.exe -simmode gui -wdb tb_ad3551r_dc_test_behav.wdb -simrunnum 0 -socket 65441
+Design successfully loaded
+Design Loading Memory Usage: 20368 KB (Peak: 20368 KB)
+Design Loading CPU Usage: 77 ms
+Simulation completed
+Simulation Memory Usage: 23560 KB (Peak: 23560 KB)
+Simulation CPU Usage: 593 ms

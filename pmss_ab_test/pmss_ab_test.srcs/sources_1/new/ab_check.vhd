@@ -57,7 +57,7 @@ entity ab_check is
 	   --DAC_SDIO1 : inout STD_LOGIC_VECTOR (15 downto 0);	--Serial Data Output in Classic SPI Mode, Serial Bidirectional Input/Output Bit 1 in Dual or Quad SPI Modes
 	   --DAC_SDIO2 : inout STD_LOGIC_VECTOR (15 downto 0);	--Serial Bidirectional Input/Output Bit 2 in Quad SPI Mode
 	   --DAC_SDIO3 : inout STD_LOGIC_VECTOR (15 downto 0);	--Serial Bidirectional Input/Output Bit 3 in Quad SPI Mode
-	   --DAC_MODE_QSPI : out STD_LOGIC_VECTOR (15 downto 0) -- A high level enables quad SPI interface mode
+	   --DAC_MODE_QSPI pin MAKE IT  high , enables quad SPI interface mode
 	   ); 
 end ab_check;
 

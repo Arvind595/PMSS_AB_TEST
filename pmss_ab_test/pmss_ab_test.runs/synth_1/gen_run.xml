@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1786629337">
-  <File Type="PA-TCL" Name="ab_check.tcl"/>
   <File Type="REPORTS-TCL" Name="ab_check_reports.tcl"/>
-  <File Type="RDS-RDS" Name="ab_check.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="ab_check_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="ab_check_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="ab_check_utilization_synth.pb"/>
+  <File Type="PA-TCL" Name="ab_check.tcl"/>
+  <File Type="RDS-RDS" Name="ab_check.vds"/>
   <File Type="RDS-DCP" Name="ab_check.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="ab_check_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="ab_check_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/ab_check.vhd">
