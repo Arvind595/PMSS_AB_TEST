@@ -1,0 +1,9 @@
+Time resolution is 1 ps
+Note: PASS: All 16 BRST pins are 0.
+Time: 10 ns  Iteration: 0  Process: /DAC_RESET_ALL_TB/line__28  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC RESET/DAC RESET.srcs/sim_1/new/DAC_RESET_ALL_TB.vhd
+Note: PASS: All 16 BCS pins are 1.
+Time: 10 ns  Iteration: 0  Process: /DAC_RESET_ALL_TB/line__28  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC RESET/DAC RESET.srcs/sim_1/new/DAC_RESET_ALL_TB.vhd
+Note: PASS: All 16 BSDIO3 pins are 0.
+Time: 10 ns  Iteration: 0  Process: /DAC_RESET_ALL_TB/line__28  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC RESET/DAC RESET.srcs/sim_1/new/DAC_RESET_ALL_TB.vhd
+Note: PASS: All 16 BSDIO2 pins are 0.
+Time: 10 ns  Iteration: 0  Process: /DAC_RESET_ALL_TB/line__28  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC RESET/DAC RESET.srcs/sim_1/new/DAC_RESET_ALL_TB.vhd

@@ -1,0 +1,14 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+Checksum           0xC3DC4686
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                                                                                                      Checksum
+0x00000000    0x003A607B    Aug 19 14:42:12 2026    C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC RESET/DAC RESET.runs/impl_1/DAC_RESET_ALL.bit    0x0002620A
+File Checksum Total                                                                                                                                              0x0002620A
