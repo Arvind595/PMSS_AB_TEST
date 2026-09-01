@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DAC Code Calculator — AD3551R</title>
+<style>
+  :root{
+    --bg:            #0a0d10;
+    --panel:         #12161b;
+    --panel-raised:  #171c22;
+    --grid:          #212831;
+    --hairline:      #262e38;
+    --text:          #e6edf0;
+    --text-dim:      #7c8894;
+    --text-faint:    #4d5761;
+    --accent:        #4de8c8;
+    --accent-dim:    #2a6e60;
+    --warn:          #f2a65a;
+    --warn-dim:      #6b4b2a;
+    --mono: 'JetBrains Mono', 'Fira Code', ui-monospace, 'SF Mono', Consolas, 'Courier New', monospace;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 28px 28px;
+    background-attachment: fixed;
+  }
+
+  .wrap {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 28px 20px 64px;
+  }
+
+  /* ---------- Header ---------- */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--hairline);
+    margin-bottom: 22px;
+  }
+  h1 {
+    font-family: var(--mono);
+    font-size: 15px;
+    letter-spacing: 0.12em;
+    font-weight: 600;
+    margin: 0;
+    color: var(--text);
+  }
+  header .sub {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    color: var(--text-dim);
+  }
+
+  /* ---------- Section shell ---------- */
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--hairline);
+    border-radius: 3px;
+    margin-bottom: 18px;
+    overflow: hidden;
+  }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    padding: 10px 16px 0;
+  }
+  .panel-body { padding: 12px 16px 16px; }
+
+  /* ---------- Range controls ---------- */
+  .range-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  .chip {
+    font-family: var(--mono);
+    font-size: 12px;
+    padding: 7px 12px;
+    border: 1px solid var(--hairline);
+    border-radius: 3px;
+    background: var(--panel-raised);
+    color: var(--text-dim);
+    cursor: pointer;
+    user-select: none;
+    transition: border-color .12s, color .12s;
+  }
+  .chip:hover { border-color: var(--accent-dim); color: var(--text); }
+  .chip.active {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(77,232,200,0.07);
+  }
+
+  .custom-range {
+    display: none;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+  }
+  .custom-range.show { display: flex; }
+  .custom-range label { font-family: var(--mono); font-size: 11px; color: var(--text-dim); }
+  .custom-range input[type="number"] {
+    width: 90px;
+    background: var(--panel-raised);
+    border: 1px solid var(--hairline);
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 12px;
+    padding: 6px 8px;
+    border-radius: 3px;
+  }
+
+  .scheme-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    align-items: center;
+  }
+  .scheme-note {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    color: var(--text-faint);
+    margin-top: 6px;
+  }
+
+  /* ---------- Single channel calculator ---------- */
+  .calc-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .slider-row { display: flex; align-items: center; gap: 12px; }
+  input[type="range"] {
+    flex: 1;
+    -webkit-appearance: none;
+    height: 3px;
+    background: var(--hairline);
+    border-radius: 2px;
+    outline: none;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    background: var(--accent);
+    cursor: pointer;
+    box-shadow: 0 0 0 4px rgba(77,232,200,0.15);
+  }
+  input[type="range"]::-moz-range-thumb {
+    width: 14px; height: 14px;
+    border: none;
+    border-radius: 50%;
+    background: var(--accent);
+    cursor: pointer;
+    box-shadow: 0 0 0 4px rgba(77,232,200,0.15);
+  }
+  .v-input {
+    width: 120px;
+    background: var(--panel-raised);
+    border: 1px solid var(--hairline);
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: 15px;
+    text-align: right;
+    padding: 8px 10px;
+    border-radius: 3px;
+  }
+  .v-input:focus { outline: none; border-color: var(--accent); }
+  .unit { font-family: var(--mono); font-size: 12px; color: var(--text-dim); }
+
+  .readout-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .readout {
+    background: var(--panel-raised);
+    border: 1px solid var(--hairline);
+    border-radius: 3px;
+    padding: 10px 12px;
+  }
+  .readout .label {
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.1em;
+    color: var(--text-faint);
+    text-transform: uppercase;
+  }
+  .readout .value {
+    font-family: var(--mono);
+    font-size: 16px;
+    color: var(--text);
+    margin-top: 4px;
+    word-break: break-all;
+  }
+  .readout.hex .value { color: var(--accent); }
+
+  input.ro-input {
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 1px 3px;
+    margin: 3px -3px 0;
+    cursor: text;
+  }
+  input.ro-input:hover { border-color: var(--hairline); }
+  input.ro-input:focus { outline: none; border-color: var(--accent); background: rgba(77,232,200,0.05); }
+
+  /* ---------- Codespace bar (signature element) ---------- */
+  .codespace {
+    margin-top: 4px;
+  }
+  .codespace .track {
+    position: relative;
+    height: 34px;
+    border-radius: 3px;
+    background:
+      repeating-linear-gradient(90deg,
+        var(--hairline) 0, var(--hairline) 1px,
+        transparent 1px, transparent calc(100%/20));
+    border: 1px solid var(--hairline);
+  }
+  .codespace .fill {
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    background: linear-gradient(90deg, rgba(77,232,200,0.03), rgba(77,232,200,0.18));
+    border-right: 1px solid var(--accent);
+    transition: width .05s linear;
+  }
+  .codespace .marker {
+    position: absolute;
+    top: -6px;
+    width: 2px;
+    height: 46px;
+    background: var(--accent);
+    box-shadow: 0 0 8px rgba(77,232,200,0.6);
+    transition: left .05s linear;
+  }
+  .codespace .ticks {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-faint);
+    margin-top: 6px;
+  }
+
+  .warn-flag {
+    display: none;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--warn);
+    margin-top: 8px;
+    padding: 6px 10px;
+    border: 1px solid var(--warn-dim);
+    border-radius: 3px;
+    background: rgba(242,166,90,0.06);
+  }
+  .warn-flag.show { display: block; }
+
+  /* ---------- Formula box ---------- */
+  .formula {
+    font-family: var(--mono);
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--text-dim);
+    background: var(--panel-raised);
+    border: 1px solid var(--hairline);
+    border-radius: 3px;
+    padding: 12px 14px;
+  }
+  .formula .hl { color: var(--accent); }
+
+  /* ---------- Channel table ---------- */
+  .ch-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  @media (max-width: 560px) {
+    .ch-grid { grid-template-columns: 1fr; }
+    .readout-row { grid-template-columns: 1fr; }
+  }
+  .ch-row {
+    display: grid;
+    grid-template-columns: 44px 1fr 90px;
+    align-items: center;
+    gap: 8px;
+    background: var(--panel-raised);
+    border: 1px solid var(--hairline);
+    border-radius: 3px;
+    padding: 8px 10px;
+  }
+  .ch-row .idx {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-faint);
+  }
+  .ch-row input[type="number"] {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--hairline);
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 13px;
+    padding: 4px 2px;
+  }
+  .ch-row input[type="number"]:focus { outline: none; border-color: var(--accent); }
+  .ch-row .hexout {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--accent);
+    text-align: right;
+  }
+  .ch-row.oor .hexout { color: var(--warn); }
+
+  .actions { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+  button {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    letter-spacing: 0.04em;
+    padding: 9px 16px;
+    border-radius: 3px;
+    border: 1px solid var(--accent-dim);
+    background: rgba(77,232,200,0.08);
+    color: var(--accent);
+    cursor: pointer;
+    transition: background .12s;
+  }
+  button:hover { background: rgba(77,232,200,0.16); }
+  button.ghost {
+    border-color: var(--hairline);
+    background: transparent;
+    color: var(--text-dim);
+  }
+  button.ghost:hover { border-color: var(--text-faint); color: var(--text); }
+
+  textarea#vhdlOut {
+    width: 100%;
+    margin-top: 10px;
+    min-height: 200px;
+    background: #0d1013;
+    border: 1px solid var(--hairline);
+    border-radius: 3px;
+    color: var(--text-dim);
+    font-family: var(--mono);
+    font-size: 11.5px;
+    padding: 10px 12px;
+    resize: vertical;
+  }
+
+  .footnote {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    color: var(--text-faint);
+    line-height: 1.6;
+    margin-top: 20px;
+    padding-top: 14px;
+    border-top: 1px solid var(--hairline);
+  }
+  .footnote .warn-inline { color: var(--warn); }
+  .footnote .ok-inline { color: var(--accent); }
+
+  /* ---------- Tabs ---------- */
+  .tabbar {
+    display: flex;
+    gap: 22px;
+    border-bottom: 1px solid var(--hairline);
+    margin-bottom: 22px;
+  }
+  .tabbtn {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: var(--text-dim);
+    padding: 0 2px 12px;
+    cursor: pointer;
+  }
+  .tabbtn:hover { color: var(--text); }
+  .tabbtn.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .tabpanel { display: none; }
+  .tabpanel.active { display: block; }
+
+  /* ---------- Unit selector (reuses .chip look) ---------- */
+  .unit-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+  }
+  .unit-row .eyebrow-inline {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+  }
+
+  /* ---------- Registers tab ---------- */
+  .regs-toolbar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+  }
+  .regs-search {
+    flex: 1;
+    min-width: 180px;
+    background: var(--panel-raised);
+    border: 1px solid var(--hairline);
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 12px;
+    padding: 8px 10px;
+    border-radius: 3px;
+  }
+  .regs-search:focus { outline: none; border-color: var(--accent); }
+  .regs-legend {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    color: var(--text-faint);
+    white-space: nowrap;
+  }
+  .regs-legend .dot {
+    display: inline-block;
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
+    margin-right: 5px;
+  }
+  .regs-group-title {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin: 18px 0 8px;
+    padding-top: 10px;
+    border-top: 1px solid var(--hairline);
+  }
+  .regs-group-title:first-of-type { border-top: none; padding-top: 0; margin-top: 6px; }
+  table.regs-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--mono);
+    font-size: 12px;
+  }
+  .regs-table th {
+    text-align: left;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    padding: 6px 8px;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .regs-table td {
+    padding: 7px 8px;
+    border-bottom: 1px solid var(--hairline);
+    vertical-align: top;
+  }
+  .regs-table tr:hover td { background: rgba(77,232,200,0.03); }
+  .regs-table tr.used td { background: rgba(77,232,200,0.05); }
+  .regs-table .addr { color: var(--accent); white-space: nowrap; }
+  .regs-table .name { color: var(--text); white-space: nowrap; }
+  .regs-table .desc { color: var(--text-dim); font-family: var(--sans); font-size: 12px; }
+  .regs-table .reset { color: var(--text-faint); white-space: nowrap; }
+  .regs-table .access { color: var(--text-faint); white-space: nowrap; }
+  .regs-table tr.hidden { display: none; }
+
+  .used-card {
+    background: var(--panel-raised);
+    border: 1px solid var(--accent-dim);
+    border-radius: 3px;
+    padding: 12px 14px;
+    margin-top: 12px;
+  }
+  .used-card h3 {
+    font-family: var(--mono);
+    font-size: 12px;
+    margin: 0 0 6px;
+    color: var(--accent);
+  }
+  .used-card p {
+    font-family: var(--sans);
+    font-size: 12.5px;
+    color: var(--text-dim);
+    line-height: 1.6;
+    margin: 0 0 8px;
+  }
+  .used-card table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--mono);
+    font-size: 11.5px;
+    margin-top: 6px;
+  }
+  .used-card table th {
+    text-align: left;
+    color: var(--text-faint);
+    font-size: 10px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    padding: 4px 6px;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .used-card table td {
+    padding: 4px 6px;
+    border-bottom: 1px solid var(--hairline);
+    color: var(--text-dim);
+  }
+  .used-card table .hex { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>DAC CODE CALCULATOR</h1>
+    <div class="sub">AD3551R · 16-BIT · 16 CHANNELS</div>
+  </header>
+
+  <div class="tabbar">
+    <button class="tabbtn active" data-tab="tabCalc">Calculator</button>
+    <button class="tabbtn" data-tab="tabRegs">Registers</button>
+  </div>
+
+  <div id="tabCalc" class="tabpanel active">
+
+  <!-- RANGE + CODING -->
+  <div class="panel">
+    <div class="eyebrow">Output span</div>
+    <div class="panel-body">
+      <div class="range-row" id="rangeChips"></div>
+      <div class="custom-range" id="customRange">
+        <label>V<sub>MIN</sub></label>
+        <input type="number" id="customMin" step="0.1" value="-10">
+        <label>V<sub>MAX</sub></label>
+        <input type="number" id="customMax" step="0.1" value="10">
+      </div>
+
+      <div class="eyebrow" style="padding-left:0; margin-top:14px;">Coding scheme</div>
+      <div class="scheme-row">
+        <div class="chip active" data-scheme="offset" id="schemeOffset">OFFSET BINARY</div>
+        <div class="chip" data-scheme="twos" id="schemeTwos">TWO'S COMPLEMENT</div>
+      </div>
+      <div class="scheme-note" id="schemeNote">0x0000 = V_MIN &nbsp;·&nbsp; 0xFFFF = V_MAX — confirm this matches the AD3551R datasheet before use on hardware.</div>
+    </div>
+  </div>
+
+  <!-- SINGLE CHANNEL -->
+  <div class="panel">
+    <div class="eyebrow">Single-channel calculator</div>
+    <div class="panel-body calc-grid">
+      <div class="unit-row">
+        <span class="eyebrow-inline">Enter voltage in</span>
+        <div class="chip active" data-unit="V" id="unitV">V</div>
+        <div class="chip" data-unit="mV" id="unitMV">mV</div>
+        <div class="chip" data-unit="uV" id="unitUV">µV</div>
+      </div>
+      <div class="slider-row">
+        <input type="range" id="vSlider" step="0.001">
+        <input type="number" id="vInput" class="v-input" step="0.001">
+        <span class="unit" id="vUnitLabel">V</span>
+      </div>
+
+      <div class="codespace">
+        <div class="track">
+          <div class="fill" id="csFill"></div>
+          <div class="marker" id="csMarker"></div>
+        </div>
+        <div class="ticks">
+          <span id="tickMin"></span>
+          <span id="tickMid"></span>
+          <span id="tickMax"></span>
+        </div>
+      </div>
+
+      <div class="scheme-note" style="margin-top:0;">Works both ways — set a voltage above, or type a code below and the voltage/slider will update to match.</div>
+      <div class="readout-row">
+        <div class="readout">
+          <div class="label">Decimal</div>
+          <input class="value ro-input" id="outDec" value="0" spellcheck="false" inputmode="numeric">
+        </div>
+        <div class="readout hex">
+          <div class="label">Hex</div>
+          <input class="value ro-input" id="outHex" value="0x0000" spellcheck="false">
+        </div>
+        <div class="readout">
+          <div class="label">Binary</div>
+          <input class="value ro-input" id="outBin" style="font-size:12px;" value="0000000000000000" spellcheck="false">
+        </div>
+      </div>
+
+      <div class="warn-flag" id="oorFlag">Voltage is outside the selected span — code has been clamped.</div>
+    </div>
+  </div>
+
+  <!-- FORMULA -->
+  <div class="panel">
+    <div class="eyebrow">Formula in use</div>
+    <div class="panel-body">
+      <div class="formula" id="formulaBox"></div>
+    </div>
+  </div>
+
+  <!-- 16 CHANNEL TABLE -->
+  <div class="panel">
+    <div class="eyebrow">All 16 channels</div>
+    <div class="panel-body">
+      <div class="scheme-note" id="chUnitNote" style="margin-top:0; margin-bottom:10px;">Values below are entered in V.</div>
+      <div class="ch-grid" id="chGrid"></div>
+      <div class="actions">
+        <button id="copyBtn">Copy VHDL constant table</button>
+        <button class="ghost" id="resetBtn">Reset all to 0 V</button>
+      </div>
+      <textarea id="vhdlOut" spellcheck="false" readonly></textarea>
+    </div>
+  </div>
+
+  <div class="footnote">
+    <span class="ok-inline">Verified against the AD3551R datasheet (Rev. A):</span> Register 0x19
+    (CH0_OUTPUT_RANGE), code 0x04 = ±10 V span — confirmed. Register 0x18 (POWERDOWN_CONFIG) — a single
+    byte, 0x00 = channel powered up — confirmed. The 16-bit DAC write starting at Register 0x2A — the
+    part's default streaming mode + descending address direction (INTERFACE_CONFIG_A reset = 0x10,
+    INTERFACE_CONFIG_B reset = 0x08) means writing 2 bytes MSB-first starting at 0x2A correctly lands the
+    high byte at 0x2A and auto-decrements to write the low byte at 0x29 — confirmed. See the
+    <span class="warn-inline">Registers</span> tab for the full map and the exact bit fields used here.
+    <br><br>
+    <span class="ok-inline">Corrected:</span> all five predefined-span presets above now use the exact
+    zero-scale/full-scale voltages from Table 8 rather than idealized round numbers — e.g. ±10 V is really
+    −10.382 V to +10.380 V, ±5 V is really −5.165 V to +5.166 V, and so on (AD deliberately builds a ~3%
+    overrange into every predefined span). Because the ±10 V and ±5 V spans are no longer perfectly
+    symmetric around 0, the two's-complement coding option is now correctly disabled for them — that
+    scheme only makes sense for a truly symmetric span, and the datasheet confirms these aren't one. Pick
+    "Custom" if you need to define your own exact span (e.g. after a CH0_RANGE_OVERRIDE with custom
+    gain/offset registers).
+  </div>
+
+  </div><!-- /tabCalc -->
+
+  <div id="tabRegs" class="tabpanel">
+
+    <div class="panel">
+      <div class="eyebrow">Register map — AD3551R datasheet Rev. A, Table 18</div>
+      <div class="panel-body">
+        <div class="regs-toolbar">
+          <input type="text" class="regs-search" id="regsSearch" placeholder="Filter by address or name…">
+          <div class="regs-legend"><span class="dot"></span>used in this project's VHDL</div>
+        </div>
+        <div id="regsGroups"></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="eyebrow">Registers actually used in this project</div>
+      <div class="panel-body">
+
+        <div class="used-card">
+          <h3>0x18 — POWERDOWN_CONFIG</h3>
+          <p>Single byte. Bit 4 = CH0_DAC_POWERDOWN (0 = normal operating mode, 1 = powered down). The
+          DAC core powers down on reset and must be brought up before use — writing 0x00 here powers it
+          up. This matches the "Reg 0x18 &lt;= 0x00 (Power up DAC)" step in dac_ad3551r_ch.vhd exactly.</p>
+        </div>
+
+        <div class="used-card">
+          <h3>0x19 — CH0_OUTPUT_RANGE</h3>
+          <p>Single byte, bits [3:0] = CH0_OUTPUT_RANGE_SEL. Selects one of five predefined spans; the
+          matching RFBx_0 feedback resistor must physically be populated for the selected span to be
+          valid.</p>
+          <table>
+            <tr><th>Code</th><th>Span</th><th>Feedback resistor</th><th>Actual V<sub>ZS</sub></th><th>Actual V<sub>FS</sub></th></tr>
+            <tr><td class="hex">0x00</td><td>0 V to 2.5 V</td><td>RFB1_0</td><td>−0.198 V</td><td>2.701 V</td></tr>
+            <tr><td class="hex">0x01</td><td>0 V to 5 V</td><td>RFB1_0</td><td>−0.078 V</td><td>5.077 V</td></tr>
+            <tr><td class="hex">0x02</td><td>0 V to 10 V</td><td>RFB2_0</td><td>−0.165 V</td><td>10.163 V</td></tr>
+            <tr><td class="hex">0x03</td><td>−5 V to +5 V</td><td>RFB2_0</td><td>−5.165 V</td><td>5.166 V</td></tr>
+            <tr><td class="hex">0x04</td><td>−10 V to +10 V</td><td>RFB4_0</td><td>−10.382 V</td><td>10.380 V</td></tr>
+          </table>
+          <p style="margin-top:8px;">This project uses code 0x04. The "Actual" columns aren't exactly
+          symmetric round numbers — Analog Devices bakes in ~3% overrange per predefined span on purpose,
+          so 0x0000/0xFFFF land a bit past the nominal ±10 V rather than exactly on it.
+          <span class="ok-inline">Both this tool's ±10 V preset and the <code>uv_to_code</code> function in
+          dac16_uart_controller.vhd now use these exact V<sub>ZS</sub>/V<sub>FS</sub> values</span> — a
+          request is still clamped to the nominal ±10 V instrument range, but converts against the true
+          span so, e.g., a request for exactly +10.000V lands on the correct code instead of 0xFFFF.</p>
+        </div>
+
+        <div class="used-card">
+          <h3>0x29 / 0x2A — CH0_DAC_16B (Fast Mode DAC register)</h3>
+          <p>16-bit register split across two addresses: 0x2A = data bits [15:8] (high byte), 0x29 = data
+          bits [7:0] (low byte). Writing this register updates the output immediately (no LDAC dependency
+          for this path). The part's reset defaults — INTERFACE_CONFIG_A = 0x10 (ADDR_DIRECTION = 0,
+          descending) and INTERFACE_CONFIG_B = 0x08 (streaming mode enabled) — mean a single SPI write of
+          address 0x2A followed by 2 data bytes MSB-first lands the high byte at 0x2A and auto-decrements
+          to write the low byte at 0x29, exactly matching the 24-bit SPI frame
+          (<span class="hex">0x2A</span> + 16-bit code) this project sends. No register configuration
+          changes needed for this to work as-is.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div><!-- /tabRegs -->
+
+</div><!-- /wrap -->
+
+<script>
+(function(){
+  const RANGES = [
+    // Zero-scale/full-scale voltages are the ACTUAL values from AD3551R
+    // datasheet Table 8 for each predefined span (not idealized round
+    // numbers) - Analog Devices builds in ~3% overrange on every predefined
+    // span on purpose. Labels match the datasheet's own naming for these
+    // spans even though the real endpoints aren't exactly symmetric/round.
+    { id: 'bip10', label: '±10 V',      vmin: -10.382, vmax: 10.380 },
+    { id: 'bip5',  label: '±5 V',       vmin: -5.165,  vmax: 5.166  },
+    { id: 'uni10', label: '0 → +10 V',  vmin: -0.165,  vmax: 10.163 },
+    { id: 'uni5',  label: '0 → +5 V',   vmin: -0.078,  vmax: 5.077  },
+    { id: 'uni25', label: '0 → +2.5 V', vmin: -0.198,  vmax: 2.701  },
+    { id: 'custom',label: 'Custom',     vmin: -10,     vmax: 10     }
+  ];
+
+  let state = {
+    rangeId: 'bip10',
+    vmin: -10.382,
+    vmax: 10.380,
+    scheme: 'offset',           // 'offset' | 'twos'
+    voltage: 0,
+    channels: new Array(16).fill(0),
+    unit: 'V'                  // 'V' | 'mV' | 'uV' — entry/display unit only; state.voltage/channels stay in volts
+  };
+
+  // ---------- tabs ----------
+  document.querySelectorAll('.tabbtn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tabbtn').forEach(b => b.classList.toggle('active', b === btn));
+      document.querySelectorAll('.tabpanel').forEach(p => p.classList.toggle('active', p.id === btn.dataset.tab));
+    });
+  });
+
+  // ---------- voltage unit ----------
+  const UNIT_FACTOR = { V: 1, mV: 1e-3, uV: 1e-6 };   // volts = displayedNumber * factor
+  const UNIT_DECIMALS = { V: 6, mV: 3, uV: 0 };
+  const UNIT_LABEL = { V: 'V', mV: 'mV', uV: 'µV' };
+
+  function voltsToDisplay(volts, unit){
+    const factor = UNIT_FACTOR[unit];
+    const decimals = UNIT_DECIMALS[unit];
+    const n = volts / factor;
+    // round to `decimals`, then strip float noise / trailing zeros
+    return parseFloat(n.toFixed(decimals));
+  }
+  function displayToVolts(n, unit){
+    return n * UNIT_FACTOR[unit];
+  }
+
+  const unitChips = { V: document.getElementById('unitV'), mV: document.getElementById('unitMV'), uV: document.getElementById('unitUV') };
+  const vUnitLabel = document.getElementById('vUnitLabel');
+  const chUnitNote = document.getElementById('chUnitNote');
+
+  function selectUnit(u){
+    state.unit = u;
+    Object.entries(unitChips).forEach(([k, el]) => el.classList.toggle('active', k === u));
+    vUnitLabel.textContent = UNIT_LABEL[u];
+    chUnitNote.textContent = 'Values below are entered in ' + UNIT_LABEL[u] + '.';
+    vInput.step = u === 'V' ? 0.001 : (u === 'mV' ? 1 : 1000);
+    renderSingle();
+    refreshChannelInputsForUnit();
+  }
+  Object.entries(unitChips).forEach(([k, el]) => el.addEventListener('click', () => selectUnit(k)));
+
+  const rangeChips = document.getElementById('rangeChips');
+  RANGES.forEach(r => {
+    const el = document.createElement('div');
+    el.className = 'chip' + (r.id === state.rangeId ? ' active' : '');
+    el.textContent = r.label;
+    el.dataset.id = r.id;
+    el.addEventListener('click', () => selectRange(r.id));
+    rangeChips.appendChild(el);
+  });
+
+  const customRange = document.getElementById('customRange');
+  const customMin = document.getElementById('customMin');
+  const customMax = document.getElementById('customMax');
+
+  function selectRange(id){
+    state.rangeId = id;
+    [...rangeChips.children].forEach(c => c.classList.toggle('active', c.dataset.id === id));
+    if (id === 'custom'){
+      customRange.classList.add('show');
+      state.vmin = parseFloat(customMin.value);
+      state.vmax = parseFloat(customMax.value);
+    } else {
+      customRange.classList.remove('show');
+      const r = RANGES.find(x => x.id === id);
+      state.vmin = r.vmin;
+      state.vmax = r.vmax;
+    }
+    syncSchemeAvailability();
+    clampVoltage();
+    renderAll();
+  }
+
+  customMin.addEventListener('input', () => {
+    state.vmin = parseFloat(customMin.value) || 0;
+    syncSchemeAvailability(); clampVoltage(); renderAll();
+  });
+  customMax.addEventListener('input', () => {
+    state.vmax = parseFloat(customMax.value) || 0;
+    syncSchemeAvailability(); clampVoltage(); renderAll();
+  });
+
+  const schemeOffset = document.getElementById('schemeOffset');
+  const schemeTwos = document.getElementById('schemeTwos');
+  const schemeNote = document.getElementById('schemeNote');
+
+  function isSymmetric(){
+    return Math.abs(state.vmin + state.vmax) < 1e-9 && state.vmax > 0;
+  }
+
+  function syncSchemeAvailability(){
+    const sym = isSymmetric();
+    schemeTwos.style.opacity = sym ? '1' : '0.35';
+    schemeTwos.style.cursor = sym ? 'pointer' : 'not-allowed';
+    if (!sym && state.scheme === 'twos'){
+      state.scheme = 'offset';
+      schemeOffset.classList.add('active');
+      schemeTwos.classList.remove('active');
+    }
+    schemeNote.innerHTML = state.scheme === 'offset'
+      ? '0x0000 = V<sub>MIN</sub> &nbsp;·&nbsp; 0xFFFF = V<sub>MAX</sub> — confirm this matches the AD3551R datasheet before use on hardware.'
+      : '0x0000 = 0 V &nbsp;·&nbsp; 0x7FFF = +V<sub>MAX</sub> &nbsp;·&nbsp; 0x8000 = −V<sub>MAX</sub> (wraps) — only valid for a symmetric bipolar span.';
+  }
+
+  schemeOffset.addEventListener('click', () => {
+    state.scheme = 'offset';
+    schemeOffset.classList.add('active');
+    schemeTwos.classList.remove('active');
+    syncSchemeAvailability(); renderAll();
+  });
+  schemeTwos.addEventListener('click', () => {
+    if (!isSymmetric()) return;
+    state.scheme = 'twos';
+    schemeTwos.classList.add('active');
+    schemeOffset.classList.remove('active');
+    syncSchemeAvailability(); renderAll();
+  });
+
+  // ---------- math ----------
+  function clamp(v, lo, hi){ return Math.min(hi, Math.max(lo, v)); }
+
+  function voltageToCode(v, vmin, vmax, scheme){
+    if (scheme === 'twos'){
+      const vmaxAbs = Math.max(Math.abs(vmin), Math.abs(vmax));
+      let signed = Math.round((v / vmaxAbs) * 32767);
+      signed = clamp(signed, -32768, 32767);
+      return signed < 0 ? signed + 65536 : signed;
+    }
+    const frac = (v - vmin) / (vmax - vmin);
+    return clamp(Math.round(frac * 65535), 0, 65535);
+  }
+
+  function codeToVoltage(code, vmin, vmax, scheme){
+    code = clamp(Math.round(code), 0, 65535);
+    if (scheme === 'twos'){
+      const vmaxAbs = Math.max(Math.abs(vmin), Math.abs(vmax));
+      const signed = code >= 32768 ? code - 65536 : code;
+      return (signed / 32767) * vmaxAbs;
+    }
+    return vmin + (code / 65535) * (vmax - vmin);
+  }
+
+  function toHex(code){ return '0x' + code.toString(16).toUpperCase().padStart(4, '0'); }
+  function toBin(code){ return code.toString(2).padStart(16, '0'); }
+
+  function clampVoltage(){
+    state.voltage = clamp(state.voltage, state.vmin, state.vmax);
+  }
+
+  // ---------- single-channel UI ----------
+  const vSlider = document.getElementById('vSlider');
+  const vInput = document.getElementById('vInput');
+  const outDec = document.getElementById('outDec');
+  const outHex = document.getElementById('outHex');
+  const outBin = document.getElementById('outBin');
+  const csFill = document.getElementById('csFill');
+  const csMarker = document.getElementById('csMarker');
+  const tickMin = document.getElementById('tickMin');
+  const tickMid = document.getElementById('tickMid');
+  const tickMax = document.getElementById('tickMax');
+  const oorFlag = document.getElementById('oorFlag');
+  const formulaBox = document.getElementById('formulaBox');
+
+  vSlider.addEventListener('input', () => {
+    state.voltage = parseFloat(vSlider.value);
+    renderSingle();
+  });
+  vInput.addEventListener('input', () => {
+    const raw = parseFloat(vInput.value);
+    if (!isNaN(raw)) { state.voltage = displayToVolts(raw, state.unit); renderSingle(); }
+  });
+
+  // ---------- reverse entry: code -> voltage ----------
+  function applyCodeInput(code){
+    if (isNaN(code)) return;
+    code = clamp(code, 0, 65535);
+    state.voltage = codeToVoltage(code, state.vmin, state.vmax, state.scheme);
+    renderSingle();
+  }
+  outDec.addEventListener('input', () => {
+    applyCodeInput(parseInt(outDec.value, 10));
+  });
+  outHex.addEventListener('input', () => {
+    const cleaned = outHex.value.trim().replace(/^0[xX]/, '');
+    applyCodeInput(parseInt(cleaned, 16));
+  });
+  outBin.addEventListener('input', () => {
+    const cleaned = outBin.value.trim();
+    applyCodeInput(cleaned === '' ? NaN : parseInt(cleaned, 2));
+  });
+
+  function renderSingle(){
+    const { vmin, vmax, scheme } = state;
+    vSlider.min = vmin; vSlider.max = vmax;
+    vSlider.step = (vmax - vmin) / 2000 || 0.001;
+    vSlider.value = clamp(state.voltage, vmin, vmax);
+    vInput.value = voltsToDisplay(state.voltage, state.unit);
+
+    const isOOR = state.voltage < vmin || state.voltage > vmax;
+    oorFlag.classList.toggle('show', isOOR);
+
+    const clampedV = clamp(state.voltage, vmin, vmax);
+    const code = voltageToCode(clampedV, vmin, vmax, scheme);
+    outDec.value = code;
+    outHex.value = toHex(code);
+    outBin.value = toBin(code);
+
+    const frac = (clampedV - vmin) / (vmax - vmin);
+    csFill.style.width = (frac * 100) + '%';
+    csMarker.style.left = 'calc(' + (frac * 100) + '% - 1px)';
+    tickMin.textContent = vmin.toFixed(3) + ' V';
+    tickMid.textContent = ((vmin + vmax) / 2).toFixed(3) + ' V';
+    tickMax.textContent = vmax.toFixed(3) + ' V';
+
+    const unitNote = state.unit === 'V' ? '' :
+      `Input: <span class="hl">${voltsToDisplay(clampedV, state.unit)} ${UNIT_LABEL[state.unit]}</span> = ${clampedV.toFixed(6)} V<br><br>`;
+
+    formulaBox.innerHTML = unitNote + (scheme === 'offset'
+      ? `CODE = round( (Vout − <span class="hl">${vmin}</span>) / (<span class="hl">${vmax}</span> − <span class="hl">${vmin}</span>) × 65535 )<br>`
+        + `Vout = <span class="hl">${vmin}</span> + CODE / 65535 × (<span class="hl">${vmax}</span> − <span class="hl">${vmin}</span>)<br><br>`
+        + `Current: CODE = round( (${clampedV.toFixed(3)} − ${vmin}) / (${vmax} − ${vmin}) × 65535 ) = <span class="hl">${code}</span> = <span class="hl">${toHex(code)}</span>`
+      : `V_FS = max(|V_MIN|, |V_MAX|) = <span class="hl">${Math.max(Math.abs(vmin), Math.abs(vmax))}</span><br>`
+        + `signed = round( Vout / V_FS × 32767 ), clamped to [−32768, 32767]<br>`
+        + `CODE = signed &lt; 0 ? signed + 65536 : signed<br><br>`
+        + `Current: signed = round( ${clampedV.toFixed(3)} / ${Math.max(Math.abs(vmin), Math.abs(vmax))} × 32767 ) → CODE = <span class="hl">${code}</span> = <span class="hl">${toHex(code)}</span>`);
+  }
+
+  // ---------- 16-channel table ----------
+  const chGrid = document.getElementById('chGrid');
+  const chInputs = [];
+
+  for (let i = 0; i < 16; i++){
+    const row = document.createElement('div');
+    row.className = 'ch-row';
+    row.innerHTML = `
+      <div class="idx">CH${String(i).padStart(2,'0')}</div>
+      <input type="number" step="0.001" value="0" data-idx="${i}">
+      <div class="hexout" id="chHex${i}">0x8000</div>
+    `;
+    chGrid.appendChild(row);
+    const input = row.querySelector('input');
+    chInputs.push(input);
+    input.addEventListener('input', () => {
+      const v = parseFloat(input.value);
+      state.channels[i] = isNaN(v) ? 0 : displayToVolts(v, state.unit);
+      renderChannel(i, row);
+    });
+  }
+
+  function refreshChannelInputsForUnit(){
+    chInputs.forEach((input, i) => { input.value = voltsToDisplay(state.channels[i], state.unit); });
+  }
+
+  function renderChannel(i, rowEl){
+    const { vmin, vmax, scheme } = state;
+    const v = state.channels[i];
+    const isOOR = v < vmin || v > vmax;
+    const clampedV = clamp(v, vmin, vmax);
+    const code = voltageToCode(clampedV, vmin, vmax, scheme);
+    const hexEl = document.getElementById('chHex' + i);
+    hexEl.textContent = toHex(code);
+    rowEl.classList.toggle('oor', isOOR);
+  }
+
+  function renderAllChannels(){
+    [...chGrid.children].forEach((row, i) => renderChannel(i, row));
+  }
+
+  document.getElementById('resetBtn').addEventListener('click', () => {
+    state.channels = new Array(16).fill(0);
+    chInputs.forEach(inp => inp.value = 0);
+    renderAllChannels();
+  });
+
+  // ---------- copy VHDL ----------
+  const vhdlOut = document.getElementById('vhdlOut');
+  document.getElementById('copyBtn').addEventListener('click', () => {
+    const { vmin, vmax, scheme } = state;
+    const lines = [
+      `    -- Generated by DAC code calculator | span ${vmin}V to ${vmax}V | scheme: ${scheme === 'offset' ? 'offset binary' : "two's complement"}`,
+      `    constant CH_DAC_CODE : code_array_t := (`
+    ];
+    for (let i = 0; i < 16; i++){
+      const v = clamp(state.channels[i], vmin, vmax);
+      const code = voltageToCode(v, vmin, vmax, scheme);
+      const comma = i < 15 ? ',' : '';
+      const idxStr = (i < 10 ? ' ' : '') + i;
+      lines.push(`        ${idxStr} => ${toHex(code).replace('0x','x"')}"${comma}  -- CH${String(i).padStart(2,'0')} = ${v.toFixed(3)} V`);
+    }
+    lines.push('    );');
+    const text = lines.join('\n');
+    vhdlOut.value = text;
+
+    navigator.clipboard && navigator.clipboard.writeText(text).catch(() => {
+      vhdlOut.select();
+    });
+  });
+
+  // ---------- registers tab ----------
+  const REGISTERS = [
+    { group: 'Interface & Device Registers (0x00–0x17)', rows: [
+      ['0x00','INTERFACE_CONFIG_A','Interface Configuration A Register.','0x10','R/W'],
+      ['0x01','INTERFACE_CONFIG_B','Interface Configuration B Register.','0x08','R/W'],
+      ['0x02','DEVICE_CONFIG','Device Configuration Register.','0x00','R'],
+      ['0x03','CHIP_TYPE','Chip Type Register.','0x04','R'],
+      ['0x04','PRODUCT_ID_L','Product ID Low Register.','0x0A','R'],
+      ['0x05','PRODUCT_ID_H','Product ID High Register.','0x40','R'],
+      ['0x06','CHIP_GRADE','Chip Grade Register.','0x05','R'],
+      ['0x0A','SCRATCH_PAD','Scratch Pad Register.','0x00','R/W'],
+      ['0x0B','SPI_REVISION','SPI Revision Register.','0x83','R'],
+      ['0x0C','VENDOR_L','Vendor ID Low Register.','0x56','R'],
+      ['0x0D','VENDOR_H','Vendor ID High Register.','0x04','R'],
+      ['0x0E','STREAM_MODE','Stream Mode Register.','0x00','R/W'],
+      ['0x0F','TRANSFER_REGISTER','Transfer Configuration Register.','0x00','R/W'],
+      ['0x10','INTERFACE_CONFIG_C','Interface Configuration C Register.','0x23','R/W'],
+      ['0x11','INTERFACE_STATUS_A','Interface Status A Register.','0x00','R/W'],
+      ['0x14','INTERFACE_CONFIG_D','Interface Configuration D Register.','0x04','R/W'],
+      ['0x15','REFERENCE_CONFIG','Reference Configuration Register.','0x00','R/W'],
+      ['0x16','ERR_ALARM_MASK','Error Alarm Mask Register.','0x00','R/W'],
+      ['0x17','ERR_STATUS','Error Status Register.','0x01','R/W'],
+    ]},
+    { group: 'Channel 0 DAC Configuration (0x18–0x1C)', rows: [
+      ['0x18','POWERDOWN_CONFIG','Power-Down Configuration Register.','0x00','R/W', true],
+      ['0x19','CH0_OUTPUT_RANGE','Output Range Register.','0x00','R/W', true],
+      ['0x1B','CH0_OFFSET','Channel 0 Offset Register.','0x00','R/W'],
+      ['0x1C','CH0_GAIN','Channel 0 Gain Register.','0x00','R/W'],
+    ]},
+    { group: 'DAC Data Path — Fast Mode, 16-bit (0x28–0x33)', rows: [
+      ['0x28','HW_LDAC_16B','Hardware LDAC Mask Register, Fast Mode.','0x00','R/W'],
+      ['0x29','CH0_DAC_16B','DAC Register for Channel 0, Fast Mode. (2 bytes: 0x29 low / 0x2A high)','0x0000','R/W', true],
+      ['0x2D','DAC_PAGE_16B','DAC Page Register, Fast Mode.','0x0000','R/W'],
+      ['0x2F','CH_SELECT_16B','Channel Select for Page Registers, Fast Mode.','0x00','R/W'],
+      ['0x30','INPUT_PAGE_16B','Input Page Register, Fast Mode.','0x0000','R/W'],
+      ['0x32','SW_LDAC_16B','Software LDAC Register, Fast Mode.','0x00','W'],
+      ['0x33','CH0_INPUT_16B','Input Register for Channel 0, Fast Mode.','0x0000','R/W'],
+    ]},
+    { group: 'DAC Data Path — Precision Mode, 24-bit (0x37–0x46)', rows: [
+      ['0x37','HW_LDAC_24B','Hardware LDAC Mask Register, Precision Mode.','0x00','R/W'],
+      ['0x38','CH0_DAC_24B','DAC Register for Channel 0, Precision Mode.','0x000000','R/W'],
+      ['0x3E','DAC_PAGE_24B','DAC Page Register, Precision Mode.','0x000000','R/W'],
+      ['0x41','CH_SELECT_24B','Channel Select for Page Registers, Precision Mode.','0x00','R/W'],
+      ['0x42','INPUT_PAGE_24B','Input Page Register, Precision Mode.','0x000000','R/W'],
+      ['0x45','SW_LDAC_24B','Software LDAC Register, Precision Mode.','0x00','W'],
+      ['0x46','CH0_INPUT_24B','Input Register for Channel 0, Precision Mode.','0x000000','R/W'],
+    ]},
+  ];
+
+  const regsGroups = document.getElementById('regsGroups');
+  REGISTERS.forEach(g => {
+    const title = document.createElement('div');
+    title.className = 'regs-group-title';
+    title.textContent = g.group;
+    regsGroups.appendChild(title);
+
+    const table = document.createElement('table');
+    table.className = 'regs-table';
+    table.innerHTML = '<tr><th style="width:60px;">Addr</th><th style="width:150px;">Name</th><th>Description</th><th style="width:70px;">Reset</th><th style="width:50px;">Access</th></tr>';
+    g.rows.forEach(([addr, name, desc, reset, access, used]) => {
+      const tr = document.createElement('tr');
+      tr.className = used ? 'used' : '';
+      tr.dataset.search = (addr + ' ' + name).toLowerCase();
+      tr.innerHTML = `<td class="addr">${addr}</td><td class="name">${name}</td><td class="desc">${desc}</td><td class="reset">${reset}</td><td class="access">${access}</td>`;
+      table.appendChild(tr);
+    });
+    regsGroups.appendChild(table);
+  });
+
+  document.getElementById('regsSearch').addEventListener('input', (e) => {
+    const q = e.target.value.trim().toLowerCase();
+    document.querySelectorAll('.regs-table tr[data-search]').forEach(tr => {
+      tr.classList.toggle('hidden', q.length > 0 && !tr.dataset.search.includes(q));
+    });
+    document.querySelectorAll('.regs-group-title').forEach(t => {
+      const table = t.nextElementSibling;
+      const anyVisible = [...table.querySelectorAll('tr[data-search]')].some(tr => !tr.classList.contains('hidden'));
+      t.style.display = anyVisible ? '' : 'none';
+      table.style.display = anyVisible ? '' : 'none';
+    });
+  });
+
+  // ---------- init ----------
+  syncSchemeAvailability();
+  renderSingle();
+  renderAllChannels();
+})();
+</script>
+</body>
+</html>

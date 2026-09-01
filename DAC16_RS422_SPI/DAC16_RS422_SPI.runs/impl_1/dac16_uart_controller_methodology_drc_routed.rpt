@@ -1,0 +1,42 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Fri Aug 28 17:06:57 2026
+| Host         : RTLPC running 64-bit major release  (build 9200)
+| Command      : report_methodology -file dac16_uart_controller_methodology_drc_routed.rpt -pb dac16_uart_controller_methodology_drc_routed.pb -rpx dac16_uart_controller_methodology_drc_routed.rpx
+| Design       : dac16_uart_controller
+| Device       : xc7a100tcsg324-2
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 1
++--------+----------+------------------------------------------+--------+
+| Rule   | Severity | Description                              | Checks |
++--------+----------+------------------------------------------+--------+
+| XDCH-2 | Warning  | Same min and max delay values on IO port | 1      |
++--------+----------+------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'RS422_RX' relative to clock FPGA_CLK_50MHZ for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks FPGA_CLK_50MHZ] -max -add_delay 2.000 [get_ports RS422_RX]
+C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC16_RS422_SPI/DAC16_RS422_SPI.srcs/constrs_1/new/CH16.xdc (Line: 307)
+Related violations: <none>
+
+

@@ -1,0 +1,736 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 06-aug-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Aug 26 10:35:03 2026
+# Process ID         : 10304
+# Current directory  : C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent8596 C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16_26-08-2026\DAC_CONSTANT 16\DAC_CONSTANT.xpr
+# Log file           : C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/vivado.log
+# Journal file       : C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16\vivado.jou
+# Running On         : RTLPC
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-14700
+# CPU Frequency      : 2112 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 16851 MB
+# Swap memory        : 9126 MB
+# Total Virtual      : 25978 MB
+# Available Virtual  : 12182 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16'
+INFO: [Project 1-313] Project file moved from 'C:/Users/Rajesh M/Documents/DAC_CONSTANT 16' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-5713] Board part '' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2026.1/Vivado/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1800.203 ; gain = 338.465
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-2
+Top: dac_test_16ch
+INFO: [Device 21-403] Loading part xc7a100tcsg324-2
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 27108
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2531.484 ; gain = 568.207
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dac_test_16ch' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test_16ch.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1000110011001100 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized0' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1011111111111111 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized0' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized1' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1001001100110011 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized1' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized2' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1100011001100110 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized2' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized3' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1001100110011001 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized3' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized4' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1100110011001100 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized4' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized5' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1001111111111111 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized5' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized6' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1101001100110010 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized6' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized7' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1010011001100110 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized7' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized8' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1101100110011001 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized8' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized9' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1010110011001100 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized9' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized10' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1110011001100110 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized10' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized11' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1011001100110011 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized11' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized12' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1111001100110010 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized12' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized13' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1011100110011001 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized13' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized14' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1111111111111111 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized14' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'dac_test_16ch' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test_16ch.vhd:36]
+WARNING: [Synth 8-3917] design dac_test_16ch has port BUS_DATA[15] driven by constant 1
+WARNING: [Synth 8-3917] design dac_test_16ch has port BUS_DATA[14] driven by constant 0
+WARNING: [Synth 8-3917] design dac_test_16ch has port BUS_DATA[13] driven by constant 1
+WARNING: [Synth 8-3917] design dac_test_16ch has port BUS_DATA[12] driven by constant 0
+WARNING: [Synth 8-3917] design dac_test_16ch has port BUS_DATA[11] driven by constant 1
+WARNING: [Synth 8-3917] design dac_test_16ch has port BUS_DATA[10] driven by constant 0
+WARNING: [Synth 8-3917] design dac_test_16ch has port BUS_DATA[9] driven by constant 1
+WARNING: [Synth 8-3917] design dac_test_16ch has port BUS_DATA[8] driven by constant 0
+WARNING: [Synth 8-3917] design dac_test_16ch has port BUS_DATA[7] driven by constant 1
+WARNING: [Synth 8-3917] design dac_test_16ch has port BUS_DATA[6] driven by constant 0
+WARNING: [Synth 8-3917] design dac_test_16ch has port BUS_DATA[5] driven by constant 1
+WARNING: [Synth 8-3917] design dac_test_16ch has port BUS_DATA[4] driven by constant 0
+WARNING: [Synth 8-3917] design dac_test_16ch has port BUS_DATA[3] driven by constant 1
+WARNING: [Synth 8-3917] design dac_test_16ch has port BUS_DATA[2] driven by constant 0
+WARNING: [Synth 8-3917] design dac_test_16ch has port BUS_DATA[1] driven by constant 1
+WARNING: [Synth 8-3917] design dac_test_16ch has port BUS_DATA[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2690.043 ; gain = 726.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2690.043 ; gain = 726.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2690.043 ; gain = 726.766
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2690.043 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:1]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:2]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:3]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:4]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:5]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:6]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'LATCH1_E'. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LATCH1_E'. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LATCH1_E'. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:184]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports LATCH1_E]'. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:184]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'LATCH1_E'. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:185]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports LATCH1_E]'. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:185]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2791.938 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 3068.559 ; gain = 1105.281
+41 Infos, 20 Warnings, 11 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 3068.559 ; gain = 1263.820
+close_design
+synth_design -top dac_test_16ch -part xc7a100tcsg324-2 -lint 
+Command: synth_design -top dac_test_16ch -part xc7a100tcsg324-2 -lint
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3082.242 ; gain = 0.000
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-638] synthesizing module 'dac_test_16ch' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test_16ch.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1000110011001100 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized0' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1011111111111111 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized0' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized1' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1001001100110011 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized1' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized2' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1100011001100110 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized2' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized3' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1001100110011001 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized3' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized4' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1100110011001100 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized4' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized5' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1001111111111111 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized5' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized6' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1101001100110010 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized6' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized7' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1010011001100110 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized7' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized8' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1101100110011001 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized8' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized9' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1010110011001100 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized9' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized10' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1110011001100110 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized10' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized11' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1011001100110011 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized11' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized12' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1111001100110010 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized12' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized13' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1011100110011001 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized13' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized14' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1111111111111111 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized14' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'dac_test_16ch' (2#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test_16ch.vhd:36]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3082.242 ; gain = 0.000
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Wed Aug 26 10:37:28 2026
+| Host         : RTLPC running 64-bit major release  (build 9200)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++---------+----------+--------------+----------+
+| Rule ID | Severity | # Violations | # Waived |
++---------+----------+--------------+----------+
+
+
+INFO: [Synth 37-85] Total of 0 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3082.242 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+39 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3082.242 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 28
+[Wed Aug 26 10:38:08 2026] Launched synth_1...
+Run output will be captured here: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3213.266 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 150 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:1]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:2]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:3]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:4]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:5]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:6]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'LATCH1_E'. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LATCH1_E'. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LATCH1_E'. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:184]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports LATCH1_E]'. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:184]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'LATCH1_E'. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:185]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports LATCH1_E]'. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:185]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3238.648 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-2
+Top: dac_test_16ch
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 4004.355 ; gain = 559.129
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dac_test_16ch' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test_16ch.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1000110011001100 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized0' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1011111111111111 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized0' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized1' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1001001100110011 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized1' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized2' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1100011001100110 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized2' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized3' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1001100110011001 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized3' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized4' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1100110011001100 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized4' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized5' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1001111111111111 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized5' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized6' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1101001100110010 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized6' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized7' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1010011001100110 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized7' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized8' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1101100110011001 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized8' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized9' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1010110011001100 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized9' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized10' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1110011001100110 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized10' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized11' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1011001100110011 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized11' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized12' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1111001100110010 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized12' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized13' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1011100110011001 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized13' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized14' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1111111111111111 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized14' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'dac_test_16ch' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test_16ch.vhd:36]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4006.328 ; gain = 561.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4013.883 ; gain = 568.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4013.883 ; gain = 568.656
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 4013.895 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:1]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:2]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:3]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:4]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:5]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:6]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'LATCH1_E'. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LATCH1_E'. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LATCH1_E'. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:184]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports LATCH1_E]'. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:184]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'LATCH1_E'. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:185]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports LATCH1_E]'. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:185]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4126.730 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 4126.730 ; gain = 681.504
+38 Infos, 4 Warnings, 11 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 4126.730 ; gain = 681.504
+close_design
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16_26-08-2026\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16_26-08-2026\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16_26-08-2026\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16_26-08-2026\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16_26-08-2026\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16_26-08-2026\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16_26-08-2026\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16_26-08-2026\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16_26-08-2026\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16_26-08-2026\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+synth_design -top dac_test_16ch -part xc7a100tcsg324-2 -lint 
+Command: synth_design -top dac_test_16ch -part xc7a100tcsg324-2 -lint
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 4126.730 ; gain = 0.000
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-638] synthesizing module 'dac_test_16ch' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test_16ch.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1000110011001100 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized0' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1011111111111111 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized0' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized1' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1001001100110011 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized1' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized2' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1100011001100110 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized2' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized3' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1001100110011001 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized3' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized4' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1100110011001100 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized4' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized5' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1001111111111111 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized5' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized6' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1101001100110010 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized6' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized7' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1010011001100110 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized7' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized8' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1101100110011001 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized8' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized9' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1010110011001100 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized9' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized10' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1110011001100110 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized10' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized11' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1011001100110011 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized11' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized12' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1111001100110010 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized12' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized13' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1011100110011001 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized13' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized14' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1111111111111111 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized14' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'dac_test_16ch' (2#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test_16ch.vhd:36]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4126.730 ; gain = 0.000
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Wed Aug 26 10:42:28 2026
+| Host         : RTLPC running 64-bit major release  (build 9200)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++---------+----------+--------------+----------+
+| Rule ID | Severity | # Violations | # Waived |
++---------+----------+--------------+----------+
+
+
+INFO: [Synth 37-85] Total of 0 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4126.730 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+39 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+reset_run synth_1
+launch_runs synth_1 -jobs 28
+[Wed Aug 26 10:42:35 2026] Launched synth_1...
+Run output will be captured here: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 28
+[Wed Aug 26 10:44:58 2026] Launched synth_1...
+Run output will be captured here: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 4126.730 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 150 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc]
+Finished Parsing XDC File [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4126.730 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+close_design
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16_26-08-2026\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16_26-08-2026\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16_26-08-2026\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16_26-08-2026\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16_26-08-2026\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+reset_run synth_1
+launch_runs synth_1 -jobs 28
+[Wed Aug 26 11:08:13 2026] Launched synth_1...
+Run output will be captured here: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 4126.730 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 150 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc]
+Finished Parsing XDC File [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4126.730 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16_26-08-2026\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16_26-08-2026\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16_26-08-2026\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16_26-08-2026\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16_26-08-2026\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+reset_run synth_1
+launch_runs synth_1 -jobs 28
+[Wed Aug 26 11:43:08 2026] Launched synth_1...
+Run output will be captured here: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 28
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Aug 26 11:44:26 2026] Launched impl_1...
+Run output will be captured here: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 4955.465 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 150 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc]
+Finished Parsing XDC File [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+launch_runs impl_1 -to_step write_bitstream -jobs 28
+[Wed Aug 26 11:45:50 2026] Launched impl_1...
+Run output will be captured here: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.runs/impl_1/runme.log
+write_cfgmem  -format mcs -size 32 -interface SPIx4 -loadbit {up 0x00000000 "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.runs/impl_1/dac_test_16ch.bit" } -file "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT 16.mcs"
+Command: write_cfgmem -format mcs -size 32 -interface SPIx4 -loadbit {up 0x00000000 "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.runs/impl_1/dac_test_16ch.bit" } -file {C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT 16.mcs}
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.runs/impl_1/dac_test_16ch.bit
+Writing file C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT 16.mcs
+Writing log file C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT 16.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x003A607B    Aug 26 11:46:20 2026    C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16_26-08-2026/DAC_CONSTANT 16/DAC_CONSTANT.runs/impl_1/dac_test_16ch.bit
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+close_design
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 26 11:48:18 2026...

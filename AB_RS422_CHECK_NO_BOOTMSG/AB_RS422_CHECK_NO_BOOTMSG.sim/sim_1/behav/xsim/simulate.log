@@ -1,0 +1,22 @@
+Time resolution is 1 ps
+Note: --- STARTING TEST 1: Docklight sends 8 bytes, expects identical echo ---
+Time: 10425914 ps  Iteration: 0  Process: /tb_rs422_docklight_test/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK_NO_BOOTMSG/AB_RS422_CHECK_NO_BOOTMSG.srcs/sim_1/new/tb_rs422_docklight_test.vhd
+Note: -> TEST 1 PASSED: 8-byte frame echoed back identically.
+Time: 1390669382 ps  Iteration: 1  Process: /tb_rs422_docklight_test/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK_NO_BOOTMSG/AB_RS422_CHECK_NO_BOOTMSG.srcs/sim_1/new/tb_rs422_docklight_test.vhd
+Note: -> TEST 1: led_ok correctly asserted after round trip.
+Time: 1394905386 ps  Iteration: 2  Process: /tb_rs422_docklight_test/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK_NO_BOOTMSG/AB_RS422_CHECK_NO_BOOTMSG.srcs/sim_1/new/tb_rs422_docklight_test.vhd
+Note: --- STARTING TEST 2: Docklight sends 3 of 8 bytes then goes silent ---
+Time: 2404877386 ps  Iteration: 0  Process: /tb_rs422_docklight_test/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK_NO_BOOTMSG/AB_RS422_CHECK_NO_BOOTMSG.srcs/sim_1/new/tb_rs422_docklight_test.vhd
+Note: 3 bytes sent, PC gone silent. Waiting >5ms for led_err to latch...
+Time: 2665294036 ps  Iteration: 0  Process: /tb_rs422_docklight_test/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK_NO_BOOTMSG/AB_RS422_CHECK_NO_BOOTMSG.srcs/sim_1/new/tb_rs422_docklight_test.vhd
+Note: -> TEST 2 PASSED: led_err latched after inter-byte timeout.
+Time: 7660915118 ps  Iteration: 2  Process: /tb_rs422_docklight_test/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK_NO_BOOTMSG/AB_RS422_CHECK_NO_BOOTMSG.srcs/sim_1/new/tb_rs422_docklight_test.vhd
+Note: --- STARTING TEST 3: Clean frame after timeout should clear led_err ---
+Time: 7660915118 ps  Iteration: 2  Process: /tb_rs422_docklight_test/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK_NO_BOOTMSG/AB_RS422_CHECK_NO_BOOTMSG.srcs/sim_1/new/tb_rs422_docklight_test.vhd
+Note: -> TEST 3: recovery frame echoed back identically.
+Time: 9041158866 ps  Iteration: 1  Process: /tb_rs422_docklight_test/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK_NO_BOOTMSG/AB_RS422_CHECK_NO_BOOTMSG.srcs/sim_1/new/tb_rs422_docklight_test.vhd
+Note: -> TEST 3 PASSED: led_err cleared after a clean round trip.
+Time: 9045394870 ps  Iteration: 2  Process: /tb_rs422_docklight_test/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK_NO_BOOTMSG/AB_RS422_CHECK_NO_BOOTMSG.srcs/sim_1/new/tb_rs422_docklight_test.vhd
+Note: --- ALL TESTS COMPLETED ---
+Time: 9045394870 ps  Iteration: 2  Process: /tb_rs422_docklight_test/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK_NO_BOOTMSG/AB_RS422_CHECK_NO_BOOTMSG.srcs/sim_1/new/tb_rs422_docklight_test.vhd
+$stop called at time : 9055394870 ps : File "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK_NO_BOOTMSG/AB_RS422_CHECK_NO_BOOTMSG.srcs/sim_1/new/tb_rs422_docklight_test.vhd" Line 317

@@ -1,0 +1,42 @@
+Time resolution is 1 ps
+Note: PASS: T1 CH3 code 0xBDA9: echo/reply bytes correct
+Time: 1580990 ns  Iteration: 1  Process: /dac16_uart_controller_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC16_RS422_SPI/DAC16_RS422_SPI.srcs/sim_1/imports/Downloads/dac16_uart_controller_tb_1.vhd
+Note: PASS: T1 CH3 code 0xBDA9: SPI frame bit count = 24
+Time: 1580990 ns  Iteration: 1  Process: /dac16_uart_controller_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC16_RS422_SPI/DAC16_RS422_SPI.srcs/sim_1/imports/Downloads/dac16_uart_controller_tb_1.vhd
+Note: PASS: T1 CH3 code 0xBDA9: SPI frame = 0x2ABDA9, expected 0x2ABDA9
+Time: 1580990 ns  Iteration: 1  Process: /dac16_uart_controller_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC16_RS422_SPI/DAC16_RS422_SPI.srcs/sim_1/imports/Downloads/dac16_uart_controller_tb_1.vhd
+Note: PASS: T2 CH7 code 0x425C: echo/reply bytes correct
+Time: 2961770 ns  Iteration: 1  Process: /dac16_uart_controller_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC16_RS422_SPI/DAC16_RS422_SPI.srcs/sim_1/imports/Downloads/dac16_uart_controller_tb_1.vhd
+Note: PASS: T2 CH7 code 0x425C: SPI frame bit count = 24
+Time: 2961770 ns  Iteration: 1  Process: /dac16_uart_controller_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC16_RS422_SPI/DAC16_RS422_SPI.srcs/sim_1/imports/Downloads/dac16_uart_controller_tb_1.vhd
+Note: PASS: T2 CH7 code 0x425C: SPI frame = 0x2A425C, expected 0x2A425C
+Time: 2961770 ns  Iteration: 1  Process: /dac16_uart_controller_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC16_RS422_SPI/DAC16_RS422_SPI.srcs/sim_1/imports/Downloads/dac16_uart_controller_tb_1.vhd
+Note: PASS: T3 bad cmd byte CH5: echo/reply bytes correct
+Time: 4342550 ns  Iteration: 1  Process: /dac16_uart_controller_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC16_RS422_SPI/DAC16_RS422_SPI.srcs/sim_1/imports/Downloads/dac16_uart_controller_tb_1.vhd
+Note: PASS: T3: no SPI write occurred on CH5
+Time: 4362550 ns  Iteration: 0  Process: /dac16_uart_controller_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC16_RS422_SPI/DAC16_RS422_SPI.srcs/sim_1/imports/Downloads/dac16_uart_controller_tb_1.vhd
+Note: PASS: T4 bad sync byte CH2: echo/reply bytes correct
+Time: 5743330 ns  Iteration: 1  Process: /dac16_uart_controller_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC16_RS422_SPI/DAC16_RS422_SPI.srcs/sim_1/imports/Downloads/dac16_uart_controller_tb_1.vhd
+Note: PASS: T4: no SPI write occurred on CH2
+Time: 5763330 ns  Iteration: 0  Process: /dac16_uart_controller_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC16_RS422_SPI/DAC16_RS422_SPI.srcs/sim_1/imports/Downloads/dac16_uart_controller_tb_1.vhd
+Note: PASS: T5 out-of-range channel: echo/reply bytes correct
+Time: 7144110 ns  Iteration: 1  Process: /dac16_uart_controller_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC16_RS422_SPI/DAC16_RS422_SPI.srcs/sim_1/imports/Downloads/dac16_uart_controller_tb_1.vhd
+Note: PASS: T6 CH10 code 0x0000: echo/reply bytes correct
+Time: 8544890 ns  Iteration: 1  Process: /dac16_uart_controller_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC16_RS422_SPI/DAC16_RS422_SPI.srcs/sim_1/imports/Downloads/dac16_uart_controller_tb_1.vhd
+Note: PASS: T6 CH10 code 0x0000: SPI frame bit count = 24
+Time: 8544890 ns  Iteration: 1  Process: /dac16_uart_controller_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC16_RS422_SPI/DAC16_RS422_SPI.srcs/sim_1/imports/Downloads/dac16_uart_controller_tb_1.vhd
+Note: PASS: T6 CH10 code 0x0000: SPI frame = 0x2A0000, expected 0x2A0000
+Time: 8544890 ns  Iteration: 1  Process: /dac16_uart_controller_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC16_RS422_SPI/DAC16_RS422_SPI.srcs/sim_1/imports/Downloads/dac16_uart_controller_tb_1.vhd
+Note: PASS: T7 CH12 code 0xFFFF: echo/reply bytes correct
+Time: 9925670 ns  Iteration: 1  Process: /dac16_uart_controller_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC16_RS422_SPI/DAC16_RS422_SPI.srcs/sim_1/imports/Downloads/dac16_uart_controller_tb_1.vhd
+Note: PASS: T7 CH12 code 0xFFFF: SPI frame bit count = 24
+Time: 9925670 ns  Iteration: 1  Process: /dac16_uart_controller_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC16_RS422_SPI/DAC16_RS422_SPI.srcs/sim_1/imports/Downloads/dac16_uart_controller_tb_1.vhd
+Note: PASS: T7 CH12 code 0xFFFF: SPI frame = 0x2AFFFF, expected 0x2AFFFF
+Time: 9925670 ns  Iteration: 1  Process: /dac16_uart_controller_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC16_RS422_SPI/DAC16_RS422_SPI.srcs/sim_1/imports/Downloads/dac16_uart_controller_tb_1.vhd
+Note: --------------------------------------------------------------
+Time: 9925670 ns  Iteration: 1  Process: /dac16_uart_controller_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC16_RS422_SPI/DAC16_RS422_SPI.srcs/sim_1/imports/Downloads/dac16_uart_controller_tb_1.vhd
+Note: TESTBENCH RESULT: ALL TESTS PASSED
+Time: 9925670 ns  Iteration: 1  Process: /dac16_uart_controller_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC16_RS422_SPI/DAC16_RS422_SPI.srcs/sim_1/imports/Downloads/dac16_uart_controller_tb_1.vhd
+Note: --------------------------------------------------------------
+Time: 9925670 ns  Iteration: 1  Process: /dac16_uart_controller_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC16_RS422_SPI/DAC16_RS422_SPI.srcs/sim_1/imports/Downloads/dac16_uart_controller_tb_1.vhd
+$stop called at time : 9925670 ns : File "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC16_RS422_SPI/DAC16_RS422_SPI.srcs/sim_1/imports/Downloads/dac16_uart_controller_tb_1.vhd" Line 360

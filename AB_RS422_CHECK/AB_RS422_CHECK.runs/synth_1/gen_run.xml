@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1787978487">
+  <File Type="PA-TCL" Name="rs422_docklight_test.tcl"/>
+  <File Type="REPORTS-TCL" Name="rs422_docklight_test_reports.tcl"/>
+  <File Type="RDS-RDS" Name="rs422_docklight_test.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="rs422_docklight_test_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="rs422_docklight_test_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="rs422_docklight_test_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="rs422_docklight_test.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="rs422_docklight_test_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="rs422_docklight_test_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/src/rs422_pkg.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../GowinProjects/universal_rs422/src/rs422_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1787653752"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/uart_phy.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../GowinProjects/universal_rs422/src/uart_phy.vhd"/>
+        <Attr Name="ImportTime" Val="1787655299"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/rs422_packet_controller.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../GowinProjects/universal_rs422/src/rs422_packet_controller.vhd"/>
+        <Attr Name="ImportTime" Val="1787653845"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/rs422_docklight_test.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../GowinProjects/universal_rs422/src/rs422_docklight_test.vhd"/>
+        <Attr Name="ImportTime" Val="1787657532"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="rs422_docklight_test"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/rs422check.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/rs422check.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2026">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

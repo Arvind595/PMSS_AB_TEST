@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl2008 xil_defaultlib  \
+"../../../../DAC16_RS422_SPI.srcs/sim_1/imports/Arvind/Projects/PMSS/VHDL/RS422 Generic/VHDL RS422 Block/universal_rs422/universal_rs422.srcs/sources_1/new/rs422_pkg.vhd" \
+"../../../../DAC16_RS422_SPI.srcs/sources_1/imports/Arvind/Projects/PMSS/VHDL/RS422 Generic/VHDL RS422 Block/universal_rs422/universal_rs422.srcs/sources_1/new/rs422_pkg.vhd" \
+"../../../../DAC16_RS422_SPI.srcs/sources_1/imports/Arvind/Projects/PMSS/VHDL/RS422 Generic/VHDL RS422 Block/universal_rs422/universal_rs422.srcs/sources_1/new/uart_phy.vhd" \
+"../../../../DAC16_RS422_SPI.srcs/sources_1/imports/Arvind/Projects/PMSS/VHDL/RS422 Generic/VHDL RS422 Block/universal_rs422/universal_rs422.srcs/sources_1/new/rs422_packet_controller.vhd" \
+"../../../../DAC16_RS422_SPI.srcs/sources_1/imports/Downloads/dac_ad3551r_ch_1.vhd" \
+"../../../../DAC16_RS422_SPI.srcs/sources_1/imports/Users/kungf/Downloads/dac16_uart_controller_1.vhd" \
+"../../../../DAC16_RS422_SPI.srcs/sim_1/imports/Downloads/dac16_uart_controller_tb_1.vhd" \
+
+# Do not sort compile order
+nosort

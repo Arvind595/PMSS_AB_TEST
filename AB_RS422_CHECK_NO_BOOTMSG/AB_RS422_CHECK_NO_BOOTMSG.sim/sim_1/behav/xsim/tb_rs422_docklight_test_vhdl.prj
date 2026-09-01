@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl2008 xil_defaultlib  \
+"../../../../AB_RS422_CHECK_NO_BOOTMSG.srcs/sources_1/imports/src/rs422_pkg.vhd" \
+"../../../../AB_RS422_CHECK_NO_BOOTMSG.srcs/sources_1/imports/src/uart_phy.vhd" \
+"../../../../AB_RS422_CHECK_NO_BOOTMSG.srcs/sources_1/imports/src/rs422_packet_controller.vhd" \
+"../../../../AB_RS422_CHECK_NO_BOOTMSG.srcs/sources_1/imports/src/rs422_docklight_test.vhd" \
+"../../../../AB_RS422_CHECK_NO_BOOTMSG.srcs/sim_1/new/tb_rs422_docklight_test.vhd" \
+
+# Do not sort compile order
+nosort

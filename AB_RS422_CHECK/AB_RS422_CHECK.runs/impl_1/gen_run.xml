@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1787978525">
+  <File Type="PA-TCL" Name="rs422_docklight_test.tcl"/>
+  <File Type="REPORTS-TCL" Name="rs422_docklight_test_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="rs422_docklight_test_timing_summary_init.rpt"/>
+  <File Type="OPT-DCP" Name="rs422_docklight_test_opt.dcp"/>
+  <File Type="OPT-DRC" Name="rs422_docklight_test_drc_opted.rpt"/>
+  <File Type="OPT-UTIL" Name="rs422_docklight_test_utilization_opted.rpt"/>
+  <File Type="OPT-UTIL-PB" Name="rs422_docklight_test_utilization_opted.pb"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="rs422_docklight_test_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="rs422_docklight_test.hwdef"/>
+  <File Type="OPT-TIMING" Name="rs422_docklight_test_timing_summary_opted.rpt"/>
+  <File Type="OPT-RQA-PB" Name="rs422_docklight_test_rqa_opted.pb"/>
+  <File Type="PWROPT-DCP" Name="rs422_docklight_test_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="rs422_docklight_test_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="rs422_docklight_test_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="rs422_docklight_test_placed.dcp"/>
+  <File Type="PLACE-IO" Name="rs422_docklight_test_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="rs422_docklight_test_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="rs422_docklight_test_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="rs422_docklight_test_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="rs422_docklight_test_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="rs422_docklight_test_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="rs422_docklight_test_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="rs422_docklight_test_timing_summary_placed.rpt"/>
+  <File Type="PLACE-RQA-PB" Name="rs422_docklight_test_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="rs422_docklight_test_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="rs422_docklight_test_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="rs422_docklight_test_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="rs422_docklight_test_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="rs422_docklight_test_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="rs422_docklight_test_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="rs422_docklight_test_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="rs422_docklight_test_routed_bb.dcp"/>
+  <File Type="ROUTE-UTIL" Name="rs422_docklight_test_utilization_routed.rpt"/>
+  <File Type="ROUTE-UTIL-PB" Name="rs422_docklight_test_utilization_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="rs422_docklight_test_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="rs422_docklight_test_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="rs422_docklight_test_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="rs422_docklight_test_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="rs422_docklight_test_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="rs422_docklight_test_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="rs422_docklight_test_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="rs422_docklight_test_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="rs422_docklight_test_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="rs422_docklight_test_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="rs422_docklight_test_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="rs422_docklight_test_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="rs422_docklight_test_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="rs422_docklight_test_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="rs422_docklight_test_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="rs422_docklight_test_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="rs422_docklight_test_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="rs422_docklight_test_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="rs422_docklight_test_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="rs422_docklight_test_rqs_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="rs422_docklight_test_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="rs422_docklight_test_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="rs422_docklight_test_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="rs422_docklight_test_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="rs422_docklight_test_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="rs422_docklight_test_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="rs422_docklight_test_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="rs422_docklight_test_bus_skew_postroute_physopted.rpx"/>
+  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="rs422_docklight_test.nts"/>
+  <File Type="NOC_SOLUTION_FILE" Name="rs422_docklight_test.ncr"/>
+  <File Type="BG-BIT" Name="rs422_docklight_test.bit"/>
+  <File Type="BG-XML" Name="rs422_docklight_test.xml"/>
+  <File Type="BG-WRITE-BITSTREAM-XML" Name="write_bitstream.xml"/>
+  <File Type="BG-BIN" Name="rs422_docklight_test.bin"/>
+  <File Type="BITSTR-MSK" Name="rs422_docklight_test.msk"/>
+  <File Type="BITSTR-RBT" Name="rs422_docklight_test.rbt"/>
+  <File Type="BITSTR-NKY" Name="rs422_docklight_test.nky"/>
+  <File Type="BITSTR-BMM" Name="rs422_docklight_test_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="rs422_docklight_test.mmi"/>
+  <File Type="PDI-FILE" Name="rs422_docklight_test.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="rs422_docklight_test_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="rs422_docklight_test_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="rs422_docklight_test.rcfi"/>
+  <File Type="CFI_FILE" Name="rs422_docklight_test.cfi"/>
+  <File Type="RNPI_FILE" Name="rs422_docklight_test.rnpi"/>
+  <File Type="RCDO-FILE" Name="rs422_docklight_test.rcdo"/>
+  <File Type="MARKER-RNPI-FILE" Name="rs422_docklight_test_markers.rnpi"/>
+  <File Type="MARKER-RCDO-FILE" Name="rs422_docklight_test_markers.rcdo"/>
+  <File Type="BOOT_RNPI_FILE" Name="rs422_docklight_test_boot.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="rs422_docklight_test_boot_markers.rnpi"/>
+  <File Type="PL_RNPI_FILE" Name="rs422_docklight_test_pld.rnpi"/>
+  <File Type="PL_MARKER_RNPI_FILE" Name="rs422_docklight_test_pld_markers.rnpi"/>
+  <File Type="PL_MASK_RNPI_FILE" Name="rs422_docklight_test_pld_mask.rnpi"/>
+  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="rs422_docklight_test_pld_shutdown.rnpi"/>
+  <File Type="PL_UNMASK_RNPI_FILE" Name="rs422_docklight_test_pld_unmask.rnpi"/>
+  <File Type="PL-RCDO-FILE" Name="rs422_docklight_test_pld.rcdo"/>
+  <File Type="PL-CLEAR-RCDO-FILE" Name="rs422_docklight_test_pld_clear.rcdo"/>
+  <File Type="PL_MARKER_RCDO_FILE" Name="rs422_docklight_test_pld_markers.rcdo"/>
+  <File Type="PL_MASK_RCDO_FILE" Name="rs422_docklight_test_pld_mask.rcdo"/>
+  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="rs422_docklight_test_pld_unmask_markers.rcdo"/>
+  <File Type="PL_UNMASK_RCDO_FILE" Name="rs422_docklight_test_pld_unmask.rcdo"/>
+  <File Type="NPI_FILE" Name="rs422_docklight_test.npi"/>
+  <File Type="RBD_FILE" Name="rs422_docklight_test.rbd"/>
+  <File Type="MMI-FILE" Name="rs422_docklight_test.mmi"/>
+  <File Type="BIF-FILE" Name="rs422_docklight_test.bif"/>
+  <File Type="BOOT-BIF-FILE" Name="rs422_docklight_test_boot.bif"/>
+  <File Type="PL-BIF-FILE" Name="rs422_docklight_test_pld.bif"/>
+  <File Type="LTX-FILE" Name="rs422_docklight_test.ltx"/>
+  <File Type="BOOT-LTX-FILE" Name="rs422_docklight_test_boot.ltx"/>
+  <File Type="PL-LTX-FILE" Name="rs422_docklight_test_pld.ltx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="rs422_docklight_test.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="rs422_docklight_test.sysdef"/>
+  <File Type="BG-BGN" Name="rs422_docklight_test.bgn"/>
+  <File Type="BG-DRC" Name="rs422_docklight_test.drc"/>
+  <File Type="RDI-RDI" Name="rs422_docklight_test.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="rs422_docklight_test_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="rs422_docklight_test_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/src/rs422_pkg.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../GowinProjects/universal_rs422/src/rs422_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1787653752"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/uart_phy.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../GowinProjects/universal_rs422/src/uart_phy.vhd"/>
+        <Attr Name="ImportTime" Val="1787655299"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/rs422_packet_controller.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../GowinProjects/universal_rs422/src/rs422_packet_controller.vhd"/>
+        <Attr Name="ImportTime" Val="1787653845"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/rs422_docklight_test.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../GowinProjects/universal_rs422/src/rs422_docklight_test.vhd"/>
+        <Attr Name="ImportTime" Val="1787657532"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="rs422_docklight_test"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/rs422check.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/rs422check.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2026">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

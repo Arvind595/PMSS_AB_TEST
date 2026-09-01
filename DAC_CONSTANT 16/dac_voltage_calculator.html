@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DAC Code Calculator — AD3551R</title>
+<style>
+  :root{
+    --bg:            #0a0d10;
+    --panel:         #12161b;
+    --panel-raised:  #171c22;
+    --grid:          #212831;
+    --hairline:      #262e38;
+    --text:          #e6edf0;
+    --text-dim:      #7c8894;
+    --text-faint:    #4d5761;
+    --accent:        #4de8c8;
+    --accent-dim:    #2a6e60;
+    --warn:          #f2a65a;
+    --warn-dim:      #6b4b2a;
+    --mono: 'JetBrains Mono', 'Fira Code', ui-monospace, 'SF Mono', Consolas, 'Courier New', monospace;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 28px 28px;
+    background-attachment: fixed;
+  }
+
+  .wrap {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 28px 20px 64px;
+  }
+
+  /* ---------- Header ---------- */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--hairline);
+    margin-bottom: 22px;
+  }
+  h1 {
+    font-family: var(--mono);
+    font-size: 15px;
+    letter-spacing: 0.12em;
+    font-weight: 600;
+    margin: 0;
+    color: var(--text);
+  }
+  header .sub {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    color: var(--text-dim);
+  }
+
+  /* ---------- Section shell ---------- */
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--hairline);
+    border-radius: 3px;
+    margin-bottom: 18px;
+    overflow: hidden;
+  }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    padding: 10px 16px 0;
+  }
+  .panel-body { padding: 12px 16px 16px; }
+
+  /* ---------- Range controls ---------- */
+  .range-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  .chip {
+    font-family: var(--mono);
+    font-size: 12px;
+    padding: 7px 12px;
+    border: 1px solid var(--hairline);
+    border-radius: 3px;
+    background: var(--panel-raised);
+    color: var(--text-dim);
+    cursor: pointer;
+    user-select: none;
+    transition: border-color .12s, color .12s;
+  }
+  .chip:hover { border-color: var(--accent-dim); color: var(--text); }
+  .chip.active {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(77,232,200,0.07);
+  }
+
+  .custom-range {
+    display: none;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+  }
+  .custom-range.show { display: flex; }
+  .custom-range label { font-family: var(--mono); font-size: 11px; color: var(--text-dim); }
+  .custom-range input[type="number"] {
+    width: 90px;
+    background: var(--panel-raised);
+    border: 1px solid var(--hairline);
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 12px;
+    padding: 6px 8px;
+    border-radius: 3px;
+  }
+
+  .scheme-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    align-items: center;
+  }
+  .scheme-note {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    color: var(--text-faint);
+    margin-top: 6px;
+  }
+
+  /* ---------- Single channel calculator ---------- */
+  .calc-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .slider-row { display: flex; align-items: center; gap: 12px; }
+  input[type="range"] {
+    flex: 1;
+    -webkit-appearance: none;
+    height: 3px;
+    background: var(--hairline);
+    border-radius: 2px;
+    outline: none;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    background: var(--accent);
+    cursor: pointer;
+    box-shadow: 0 0 0 4px rgba(77,232,200,0.15);
+  }
+  input[type="range"]::-moz-range-thumb {
+    width: 14px; height: 14px;
+    border: none;
+    border-radius: 50%;
+    background: var(--accent);
+    cursor: pointer;
+    box-shadow: 0 0 0 4px rgba(77,232,200,0.15);
+  }
+  .v-input {
+    width: 120px;
+    background: var(--panel-raised);
+    border: 1px solid var(--hairline);
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: 15px;
+    text-align: right;
+    padding: 8px 10px;
+    border-radius: 3px;
+  }
+  .v-input:focus { outline: none; border-color: var(--accent); }
+  .unit { font-family: var(--mono); font-size: 12px; color: var(--text-dim); }
+
+  .readout-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .readout {
+    background: var(--panel-raised);
+    border: 1px solid var(--hairline);
+    border-radius: 3px;
+    padding: 10px 12px;
+  }
+  .readout .label {
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.1em;
+    color: var(--text-faint);
+    text-transform: uppercase;
+  }
+  .readout .value {
+    font-family: var(--mono);
+    font-size: 16px;
+    color: var(--text);
+    margin-top: 4px;
+    word-break: break-all;
+  }
+  .readout.hex .value { color: var(--accent); }
+
+  /* ---------- Codespace bar (signature element) ---------- */
+  .codespace {
+    margin-top: 4px;
+  }
+  .codespace .track {
+    position: relative;
+    height: 34px;
+    border-radius: 3px;
+    background:
+      repeating-linear-gradient(90deg,
+        var(--hairline) 0, var(--hairline) 1px,
+        transparent 1px, transparent calc(100%/20));
+    border: 1px solid var(--hairline);
+  }
+  .codespace .fill {
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    background: linear-gradient(90deg, rgba(77,232,200,0.03), rgba(77,232,200,0.18));
+    border-right: 1px solid var(--accent);
+    transition: width .05s linear;
+  }
+  .codespace .marker {
+    position: absolute;
+    top: -6px;
+    width: 2px;
+    height: 46px;
+    background: var(--accent);
+    box-shadow: 0 0 8px rgba(77,232,200,0.6);
+    transition: left .05s linear;
+  }
+  .codespace .ticks {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-faint);
+    margin-top: 6px;
+  }
+
+  .warn-flag {
+    display: none;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--warn);
+    margin-top: 8px;
+    padding: 6px 10px;
+    border: 1px solid var(--warn-dim);
+    border-radius: 3px;
+    background: rgba(242,166,90,0.06);
+  }
+  .warn-flag.show { display: block; }
+
+  /* ---------- Formula box ---------- */
+  .formula {
+    font-family: var(--mono);
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--text-dim);
+    background: var(--panel-raised);
+    border: 1px solid var(--hairline);
+    border-radius: 3px;
+    padding: 12px 14px;
+  }
+  .formula .hl { color: var(--accent); }
+
+  /* ---------- Channel table ---------- */
+  .ch-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  @media (max-width: 560px) {
+    .ch-grid { grid-template-columns: 1fr; }
+    .readout-row { grid-template-columns: 1fr; }
+  }
+  .ch-row {
+    display: grid;
+    grid-template-columns: 44px 1fr 90px;
+    align-items: center;
+    gap: 8px;
+    background: var(--panel-raised);
+    border: 1px solid var(--hairline);
+    border-radius: 3px;
+    padding: 8px 10px;
+  }
+  .ch-row .idx {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-faint);
+  }
+  .ch-row input[type="number"] {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--hairline);
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 13px;
+    padding: 4px 2px;
+  }
+  .ch-row input[type="number"]:focus { outline: none; border-color: var(--accent); }
+  .ch-row .hexout {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--accent);
+    text-align: right;
+  }
+  .ch-row.oor .hexout { color: var(--warn); }
+
+  .actions { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+  button {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    letter-spacing: 0.04em;
+    padding: 9px 16px;
+    border-radius: 3px;
+    border: 1px solid var(--accent-dim);
+    background: rgba(77,232,200,0.08);
+    color: var(--accent);
+    cursor: pointer;
+    transition: background .12s;
+  }
+  button:hover { background: rgba(77,232,200,0.16); }
+  button.ghost {
+    border-color: var(--hairline);
+    background: transparent;
+    color: var(--text-dim);
+  }
+  button.ghost:hover { border-color: var(--text-faint); color: var(--text); }
+
+  textarea#vhdlOut {
+    width: 100%;
+    margin-top: 10px;
+    min-height: 200px;
+    background: #0d1013;
+    border: 1px solid var(--hairline);
+    border-radius: 3px;
+    color: var(--text-dim);
+    font-family: var(--mono);
+    font-size: 11.5px;
+    padding: 10px 12px;
+    resize: vertical;
+  }
+
+  .footnote {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    color: var(--text-faint);
+    line-height: 1.6;
+    margin-top: 20px;
+    padding-top: 14px;
+    border-top: 1px solid var(--hairline);
+  }
+  .footnote .warn-inline { color: var(--warn); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>DAC CODE CALCULATOR BY ARVIND</h1>
+    <div class="sub">AD3551R · 16-BIT · 16 CHANNELS · REV1.0 · 25-08-2026</div>
+  </header>
+
+  <!-- RANGE + CODING -->
+  <div class="panel">
+    <div class="eyebrow">Output span</div>
+    <div class="panel-body">
+      <div class="range-row" id="rangeChips"></div>
+      <div class="custom-range" id="customRange">
+        <label>V<sub>MIN</sub></label>
+        <input type="number" id="customMin" step="0.1" value="-10">
+        <label>V<sub>MAX</sub></label>
+        <input type="number" id="customMax" step="0.1" value="10">
+      </div>
+
+      <div class="eyebrow" style="padding-left:0; margin-top:14px;">Coding scheme</div>
+      <div class="scheme-row">
+        <div class="chip active" data-scheme="offset" id="schemeOffset">OFFSET BINARY</div>
+        <div class="chip" data-scheme="twos" id="schemeTwos">TWO'S COMPLEMENT</div>
+      </div>
+      <div class="scheme-note" id="schemeNote">0x0000 = V_MIN &nbsp;·&nbsp; 0xFFFF = V_MAX — confirm this matches the AD3551R datasheet before use on hardware.</div>
+    </div>
+  </div>
+
+  <!-- SINGLE CHANNEL -->
+  <div class="panel">
+    <div class="eyebrow">Single-channel calculator</div>
+    <div class="panel-body calc-grid">
+      <div class="slider-row">
+        <input type="range" id="vSlider" step="0.001">
+        <input type="number" id="vInput" class="v-input" step="0.001">
+        <span class="unit">V</span>
+      </div>
+
+      <div class="codespace">
+        <div class="track">
+          <div class="fill" id="csFill"></div>
+          <div class="marker" id="csMarker"></div>
+        </div>
+        <div class="ticks">
+          <span id="tickMin"></span>
+          <span id="tickMid"></span>
+          <span id="tickMax"></span>
+        </div>
+      </div>
+
+      <div class="readout-row">
+        <div class="readout">
+          <div class="label">Decimal</div>
+          <div class="value" id="outDec">0</div>
+        </div>
+        <div class="readout hex">
+          <div class="label">Hex</div>
+          <div class="value" id="outHex">0x0000</div>
+        </div>
+        <div class="readout">
+          <div class="label">Binary</div>
+          <div class="value" id="outBin" style="font-size:12px;">0000000000000000</div>
+        </div>
+      </div>
+
+      <div class="warn-flag" id="oorFlag">Voltage is outside the selected span — code has been clamped.</div>
+    </div>
+  </div>
+
+  <!-- FORMULA -->
+  <div class="panel">
+    <div class="eyebrow">Formula in use</div>
+    <div class="panel-body">
+      <div class="formula" id="formulaBox"></div>
+    </div>
+  </div>
+
+  <!-- 16 CHANNEL TABLE -->
+  <div class="panel">
+    <div class="eyebrow">All 16 channels</div>
+    <div class="panel-body">
+      <div class="ch-grid" id="chGrid"></div>
+      <div class="actions">
+        <button id="copyBtn">Copy VHDL constant table</button>
+        <button class="ghost" id="resetBtn">Reset all to 0 V</button>
+      </div>
+      <textarea id="vhdlOut" spellcheck="false" readonly></textarea>
+    </div>
+  </div>
+
+  <div class="footnote">
+    Register addresses (0x18 / 0x19 / 0x2A) and the offset-binary coding convention here are carried over
+    from the uploaded dac_test.vhd file. <span class="warn-inline">Verify both against the AD3551R
+    datasheet's register map and transfer-function section</span> before using these codes on real hardware —
+    this tool computes the math correctly for whichever scheme you select, but it can't confirm which
+    scheme the physical part actually uses.
+  </div>
+
+</div>
+
+<script>
+(function(){
+  const RANGES = [
+    { id: 'bip10', label: '±10 V',    vmin: -10,  vmax: 10  },
+    { id: 'bip5',  label: '±5 V',     vmin: -5,   vmax: 5   },
+    { id: 'uni10', label: '0 → +10 V',vmin: 0,    vmax: 10  },
+    { id: 'uni5',  label: '0 → +5 V', vmin: 0,    vmax: 5   },
+    { id: 'uni25', label: '0 → +2.5 V',vmin: 0,   vmax: 2.5 },
+    { id: 'custom',label: 'Custom',   vmin: -10,  vmax: 10  }
+  ];
+
+  let state = {
+    rangeId: 'bip10',
+    vmin: -10,
+    vmax: 10,
+    scheme: 'offset',           // 'offset' | 'twos'
+    voltage: 0,
+    channels: new Array(16).fill(0)
+  };
+
+  const rangeChips = document.getElementById('rangeChips');
+  RANGES.forEach(r => {
+    const el = document.createElement('div');
+    el.className = 'chip' + (r.id === state.rangeId ? ' active' : '');
+    el.textContent = r.label;
+    el.dataset.id = r.id;
+    el.addEventListener('click', () => selectRange(r.id));
+    rangeChips.appendChild(el);
+  });
+
+  const customRange = document.getElementById('customRange');
+  const customMin = document.getElementById('customMin');
+  const customMax = document.getElementById('customMax');
+
+  function selectRange(id){
+    state.rangeId = id;
+    [...rangeChips.children].forEach(c => c.classList.toggle('active', c.dataset.id === id));
+    if (id === 'custom'){
+      customRange.classList.add('show');
+      state.vmin = parseFloat(customMin.value);
+      state.vmax = parseFloat(customMax.value);
+    } else {
+      customRange.classList.remove('show');
+      const r = RANGES.find(x => x.id === id);
+      state.vmin = r.vmin;
+      state.vmax = r.vmax;
+    }
+    syncSchemeAvailability();
+    clampVoltage();
+    renderAll();
+  }
+
+  customMin.addEventListener('input', () => {
+    state.vmin = parseFloat(customMin.value) || 0;
+    syncSchemeAvailability(); clampVoltage(); renderAll();
+  });
+  customMax.addEventListener('input', () => {
+    state.vmax = parseFloat(customMax.value) || 0;
+    syncSchemeAvailability(); clampVoltage(); renderAll();
+  });
+
+  const schemeOffset = document.getElementById('schemeOffset');
+  const schemeTwos = document.getElementById('schemeTwos');
+  const schemeNote = document.getElementById('schemeNote');
+
+  function isSymmetric(){
+    return Math.abs(state.vmin + state.vmax) < 1e-9 && state.vmax > 0;
+  }
+
+  function syncSchemeAvailability(){
+    const sym = isSymmetric();
+    schemeTwos.style.opacity = sym ? '1' : '0.35';
+    schemeTwos.style.cursor = sym ? 'pointer' : 'not-allowed';
+    if (!sym && state.scheme === 'twos'){
+      state.scheme = 'offset';
+      schemeOffset.classList.add('active');
+      schemeTwos.classList.remove('active');
+    }
+    schemeNote.innerHTML = state.scheme === 'offset'
+      ? '0x0000 = V<sub>MIN</sub> &nbsp;·&nbsp; 0xFFFF = V<sub>MAX</sub> — confirm this matches the AD3551R datasheet before use on hardware.'
+      : '0x0000 = 0 V &nbsp;·&nbsp; 0x7FFF = +V<sub>MAX</sub> &nbsp;·&nbsp; 0x8000 = −V<sub>MAX</sub> (wraps) — only valid for a symmetric bipolar span.';
+  }
+
+  schemeOffset.addEventListener('click', () => {
+    state.scheme = 'offset';
+    schemeOffset.classList.add('active');
+    schemeTwos.classList.remove('active');
+    syncSchemeAvailability(); renderAll();
+  });
+  schemeTwos.addEventListener('click', () => {
+    if (!isSymmetric()) return;
+    state.scheme = 'twos';
+    schemeTwos.classList.add('active');
+    schemeOffset.classList.remove('active');
+    syncSchemeAvailability(); renderAll();
+  });
+
+  // ---------- math ----------
+  function clamp(v, lo, hi){ return Math.min(hi, Math.max(lo, v)); }
+
+  function voltageToCode(v, vmin, vmax, scheme){
+    if (scheme === 'twos'){
+      const vmaxAbs = Math.max(Math.abs(vmin), Math.abs(vmax));
+      let signed = Math.round((v / vmaxAbs) * 32767);
+      signed = clamp(signed, -32768, 32767);
+      return signed < 0 ? signed + 65536 : signed;
+    }
+    const frac = (v - vmin) / (vmax - vmin);
+    return clamp(Math.round(frac * 65535), 0, 65535);
+  }
+
+  function toHex(code){ return '0x' + code.toString(16).toUpperCase().padStart(4, '0'); }
+  function toBin(code){ return code.toString(2).padStart(16, '0'); }
+
+  function clampVoltage(){
+    state.voltage = clamp(state.voltage, state.vmin, state.vmax);
+  }
+
+  // ---------- single-channel UI ----------
+  const vSlider = document.getElementById('vSlider');
+  const vInput = document.getElementById('vInput');
+  const outDec = document.getElementById('outDec');
+  const outHex = document.getElementById('outHex');
+  const outBin = document.getElementById('outBin');
+  const csFill = document.getElementById('csFill');
+  const csMarker = document.getElementById('csMarker');
+  const tickMin = document.getElementById('tickMin');
+  const tickMid = document.getElementById('tickMid');
+  const tickMax = document.getElementById('tickMax');
+  const oorFlag = document.getElementById('oorFlag');
+  const formulaBox = document.getElementById('formulaBox');
+
+  vSlider.addEventListener('input', () => {
+    state.voltage = parseFloat(vSlider.value);
+    renderSingle();
+  });
+  vInput.addEventListener('input', () => {
+    const raw = parseFloat(vInput.value);
+    if (!isNaN(raw)) { state.voltage = raw; renderSingle(); }
+  });
+
+  function renderSingle(){
+    const { vmin, vmax, scheme } = state;
+    vSlider.min = vmin; vSlider.max = vmax;
+    vSlider.step = (vmax - vmin) / 2000 || 0.001;
+    vSlider.value = clamp(state.voltage, vmin, vmax);
+    vInput.value = state.voltage;
+
+    const isOOR = state.voltage < vmin || state.voltage > vmax;
+    oorFlag.classList.toggle('show', isOOR);
+
+    const clampedV = clamp(state.voltage, vmin, vmax);
+    const code = voltageToCode(clampedV, vmin, vmax, scheme);
+    outDec.textContent = code;
+    outHex.textContent = toHex(code);
+    outBin.textContent = toBin(code);
+
+    const frac = (clampedV - vmin) / (vmax - vmin);
+    csFill.style.width = (frac * 100) + '%';
+    csMarker.style.left = 'calc(' + (frac * 100) + '% - 1px)';
+    tickMin.textContent = vmin.toFixed(3) + ' V';
+    tickMid.textContent = ((vmin + vmax) / 2).toFixed(3) + ' V';
+    tickMax.textContent = vmax.toFixed(3) + ' V';
+
+    formulaBox.innerHTML = scheme === 'offset'
+      ? `CODE = round( (Vout − <span class="hl">${vmin}</span>) / (<span class="hl">${vmax}</span> − <span class="hl">${vmin}</span>) × 65535 )<br>`
+        + `Vout = <span class="hl">${vmin}</span> + CODE / 65535 × (<span class="hl">${vmax}</span> − <span class="hl">${vmin}</span>)<br><br>`
+        + `Current: CODE = round( (${clampedV.toFixed(3)} − ${vmin}) / (${vmax} − ${vmin}) × 65535 ) = <span class="hl">${code}</span> = <span class="hl">${toHex(code)}</span>`
+      : `V_FS = max(|V_MIN|, |V_MAX|) = <span class="hl">${Math.max(Math.abs(vmin), Math.abs(vmax))}</span><br>`
+        + `signed = round( Vout / V_FS × 32767 ), clamped to [−32768, 32767]<br>`
+        + `CODE = signed &lt; 0 ? signed + 65536 : signed<br><br>`
+        + `Current: signed = round( ${clampedV.toFixed(3)} / ${Math.max(Math.abs(vmin), Math.abs(vmax))} × 32767 ) → CODE = <span class="hl">${code}</span> = <span class="hl">${toHex(code)}</span>`;
+  }
+
+  // ---------- 16-channel table ----------
+  const chGrid = document.getElementById('chGrid');
+  const chInputs = [];
+
+  for (let i = 0; i < 16; i++){
+    const row = document.createElement('div');
+    row.className = 'ch-row';
+    row.innerHTML = `
+      <div class="idx">CH${String(i).padStart(2,'0')}</div>
+      <input type="number" step="0.001" value="0" data-idx="${i}">
+      <div class="hexout" id="chHex${i}">0x8000</div>
+    `;
+    chGrid.appendChild(row);
+    const input = row.querySelector('input');
+    chInputs.push(input);
+    input.addEventListener('input', () => {
+      const v = parseFloat(input.value);
+      state.channels[i] = isNaN(v) ? 0 : v;
+      renderChannel(i, row);
+    });
+  }
+
+  function renderChannel(i, rowEl){
+    const { vmin, vmax, scheme } = state;
+    const v = state.channels[i];
+    const isOOR = v < vmin || v > vmax;
+    const clampedV = clamp(v, vmin, vmax);
+    const code = voltageToCode(clampedV, vmin, vmax, scheme);
+    const hexEl = document.getElementById('chHex' + i);
+    hexEl.textContent = toHex(code);
+    rowEl.classList.toggle('oor', isOOR);
+  }
+
+  function renderAllChannels(){
+    [...chGrid.children].forEach((row, i) => renderChannel(i, row));
+  }
+
+  document.getElementById('resetBtn').addEventListener('click', () => {
+    state.channels = new Array(16).fill(0);
+    chInputs.forEach(inp => inp.value = 0);
+    renderAllChannels();
+  });
+
+  // ---------- copy VHDL ----------
+  const vhdlOut = document.getElementById('vhdlOut');
+  document.getElementById('copyBtn').addEventListener('click', () => {
+    const { vmin, vmax, scheme } = state;
+    const lines = [
+      `    -- Generated by DAC code calculator | span ${vmin}V to ${vmax}V | scheme: ${scheme === 'offset' ? 'offset binary' : "two's complement"}`,
+      `    constant CH_DAC_CODE : code_array_t := (`
+    ];
+    for (let i = 0; i < 16; i++){
+      const v = clamp(state.channels[i], vmin, vmax);
+      const code = voltageToCode(v, vmin, vmax, scheme);
+      const comma = i < 15 ? ',' : '';
+      const idxStr = (i < 10 ? ' ' : '') + i;
+      lines.push(`        ${idxStr} => ${toHex(code).replace('0x','x"')}"${comma}  -- CH${String(i).padStart(2,'0')} = ${v.toFixed(3)} V`);
+    }
+    lines.push('    );');
+    const text = lines.join('\n');
+    vhdlOut.value = text;
+
+    navigator.clipboard && navigator.clipboard.writeText(text).catch(() => {
+      vhdlOut.select();
+    });
+  });
+
+  // ---------- init ----------
+  syncSchemeAvailability();
+  renderSingle();
+  renderAllChannels();
+})();
+</script>
+</body>
+</html>

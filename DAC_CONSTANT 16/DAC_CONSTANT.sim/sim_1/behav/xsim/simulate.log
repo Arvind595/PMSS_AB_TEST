@@ -1,0 +1,40 @@
+Time resolution is 1 ps
+Note: CH0: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(0)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH1: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(1)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH2: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(2)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH3: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(3)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH4: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(4)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH5: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(5)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH6: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(6)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH7: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(7)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH8: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(8)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH9: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(9)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH10: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(10)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH11: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(11)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH12: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(12)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH13: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(13)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH14: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(14)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH15: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(15)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: --------------------------------------------------------------
+Time: 300100 ns  Iteration: 0  Process: /dac_test_16ch_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: TESTBENCH RESULT: ALL 16 CHANNELS PASSED
+Time: 300100 ns  Iteration: 0  Process: /dac_test_16ch_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: --------------------------------------------------------------
+Time: 300100 ns  Iteration: 0  Process: /dac_test_16ch_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+$stop called at time : 300100 ns : File "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd" Line 143

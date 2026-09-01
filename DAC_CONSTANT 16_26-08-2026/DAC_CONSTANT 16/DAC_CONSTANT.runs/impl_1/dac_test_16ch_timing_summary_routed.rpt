@@ -1,0 +1,1309 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Wed Aug 26 11:45:14 2026
+| Host         : RTLPC running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -routable_nets -report_unconstrained -file dac_test_16ch_timing_summary_routed.rpt -pb dac_test_16ch_timing_summary_routed.pb -rpx dac_test_16ch_timing_summary_routed.rpx -warn_on_violation
+| Design       : dac_test_16ch
+| Device       : 7a100t-csg324
+| Speed File   : -2  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (0)
+6. checking no_output_delay (0)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (0)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (0)
+-------------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      1.539        0.000                      0                 2881        0.080        0.000                      0                 2881        9.500        0.000                       0                  1130  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock           Waveform(ns)       Period(ns)      Frequency(MHz)
+-----           ------------       ----------      --------------
+FPGA_CLK_50MHZ  {0.000 10.000}     20.000          50.000          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock               WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----               -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+FPGA_CLK_50MHZ        1.539        0.000                      0                 2881        0.080        0.000                      0                 2881        9.500        0.000                       0                  1130  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  FPGA_CLK_50MHZ
+  To Clock:  FPGA_CLK_50MHZ
+
+Setup :            0  Failing Endpoints,  Worst Slack        1.539ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.080ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        9.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             1.539ns  (required time - arrival time)
+  Source:                 RST_SW
+                            (input port clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            gen_channels[11].ch_inst/FSM_sequential_state_reg[0]/R
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             FPGA_CLK_50MHZ
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (FPGA_CLK_50MHZ rise@20.000ns - FPGA_CLK_50MHZ rise@0.000ns)
+  Data Path Delay:        7.690ns  (logic 1.504ns (19.553%)  route 6.187ns (80.447%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            15.000ns
+  Clock Path Skew:        4.687ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.687ns = ( 24.687 - 20.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+                         input delay                 15.000    15.000    <hidden>
+    D10                                               0.000    15.000 f  RST_SW
+                         net (fo=0)                   0.000    15.000    RST_SW
+    D10                  IBUF (Prop_ibuf_I_O)         1.399    16.399 f  RST_SW_IBUF_inst/O
+                         net (fo=137, routed)         3.298    19.697    gen_channels[15].ch_inst/RST_SW_IBUF
+    SLICE_X88Y99         LUT1 (Prop_lut1_I0_O)        0.105    19.802 r  gen_channels[15].ch_inst/FSM_sequential_state[3]_i_1/O
+                         net (fo=496, routed)         2.889    22.690    gen_channels[11].ch_inst/spi_start_reg_0
+    SLICE_X2Y142         FDRE                                         r  gen_channels[11].ch_inst/FSM_sequential_state_reg[0]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                     20.000    20.000 r  <hidden>
+    B8                                                0.000    20.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000    20.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         1.399    21.399 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.880    23.279    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    23.356 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        1.331    24.687    gen_channels[11].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X2Y142         FDRE                                         r  gen_channels[11].ch_inst/FSM_sequential_state_reg[0]/C
+                         clock pessimism              0.000    24.687    <hidden>
+                         clock uncertainty           -0.035    24.652    <hidden>
+    SLICE_X2Y142         FDRE (Setup_fdre_C_R)       -0.423    24.229    gen_channels[11].ch_inst/FSM_sequential_state_reg[0]
+  -------------------------------------------------------------------
+                         required time                         24.229    <hidden>
+                         arrival time                         -22.690    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.539    <hidden>
+
+Slack (MET) :             1.544ns  (required time - arrival time)
+  Source:                 RST_SW
+                            (input port clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            gen_channels[11].ch_inst/DAC_nCS_reg/S
+                            (rising edge-triggered cell FDSE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             FPGA_CLK_50MHZ
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (FPGA_CLK_50MHZ rise@20.000ns - FPGA_CLK_50MHZ rise@0.000ns)
+  Data Path Delay:        7.684ns  (logic 1.504ns (19.569%)  route 6.181ns (80.431%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            15.000ns
+  Clock Path Skew:        4.686ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.686ns = ( 24.686 - 20.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+                         input delay                 15.000    15.000    <hidden>
+    D10                                               0.000    15.000 f  RST_SW
+                         net (fo=0)                   0.000    15.000    RST_SW
+    D10                  IBUF (Prop_ibuf_I_O)         1.399    16.399 f  RST_SW_IBUF_inst/O
+                         net (fo=137, routed)         3.298    19.697    gen_channels[15].ch_inst/RST_SW_IBUF
+    SLICE_X88Y99         LUT1 (Prop_lut1_I0_O)        0.105    19.802 r  gen_channels[15].ch_inst/FSM_sequential_state[3]_i_1/O
+                         net (fo=496, routed)         2.883    22.684    gen_channels[11].ch_inst/spi_start_reg_0
+    SLICE_X2Y140         FDSE                                         r  gen_channels[11].ch_inst/DAC_nCS_reg/S
+  -------------------------------------------------------------------    -------------------
+
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                     20.000    20.000 r  <hidden>
+    B8                                                0.000    20.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000    20.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         1.399    21.399 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.880    23.279    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    23.356 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        1.330    24.686    gen_channels[11].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X2Y140         FDSE                                         r  gen_channels[11].ch_inst/DAC_nCS_reg/C
+                         clock pessimism              0.000    24.686    <hidden>
+                         clock uncertainty           -0.035    24.651    <hidden>
+    SLICE_X2Y140         FDSE (Setup_fdse_C_S)       -0.423    24.228    gen_channels[11].ch_inst/DAC_nCS_reg
+  -------------------------------------------------------------------
+                         required time                         24.228    <hidden>
+                         arrival time                         -22.684    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.544    <hidden>
+
+Slack (MET) :             1.610ns  (required time - arrival time)
+  Source:                 RST_SW
+                            (input port clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            gen_channels[11].ch_inst/DAC_nRST_reg/R
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             FPGA_CLK_50MHZ
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (FPGA_CLK_50MHZ rise@20.000ns - FPGA_CLK_50MHZ rise@0.000ns)
+  Data Path Delay:        7.690ns  (logic 1.504ns (19.553%)  route 6.187ns (80.447%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            15.000ns
+  Clock Path Skew:        4.687ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.687ns = ( 24.687 - 20.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+                         input delay                 15.000    15.000    <hidden>
+    D10                                               0.000    15.000 f  RST_SW
+                         net (fo=0)                   0.000    15.000    RST_SW
+    D10                  IBUF (Prop_ibuf_I_O)         1.399    16.399 f  RST_SW_IBUF_inst/O
+                         net (fo=137, routed)         3.298    19.697    gen_channels[15].ch_inst/RST_SW_IBUF
+    SLICE_X88Y99         LUT1 (Prop_lut1_I0_O)        0.105    19.802 r  gen_channels[15].ch_inst/FSM_sequential_state[3]_i_1/O
+                         net (fo=496, routed)         2.889    22.690    gen_channels[11].ch_inst/spi_start_reg_0
+    SLICE_X3Y142         FDRE                                         r  gen_channels[11].ch_inst/DAC_nRST_reg/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                     20.000    20.000 r  <hidden>
+    B8                                                0.000    20.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000    20.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         1.399    21.399 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.880    23.279    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    23.356 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        1.331    24.687    gen_channels[11].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X3Y142         FDRE                                         r  gen_channels[11].ch_inst/DAC_nRST_reg/C
+                         clock pessimism              0.000    24.687    <hidden>
+                         clock uncertainty           -0.035    24.652    <hidden>
+    SLICE_X3Y142         FDRE (Setup_fdre_C_R)       -0.352    24.300    gen_channels[11].ch_inst/DAC_nRST_reg
+  -------------------------------------------------------------------
+                         required time                         24.300    <hidden>
+                         arrival time                         -22.690    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.610    <hidden>
+
+Slack (MET) :             1.612ns  (required time - arrival time)
+  Source:                 RST_SW
+                            (input port clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            gen_channels[11].ch_inst/FSM_sequential_state_reg[1]/R
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             FPGA_CLK_50MHZ
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (FPGA_CLK_50MHZ rise@20.000ns - FPGA_CLK_50MHZ rise@0.000ns)
+  Data Path Delay:        7.688ns  (logic 1.504ns (19.560%)  route 6.184ns (80.440%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            15.000ns
+  Clock Path Skew:        4.687ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.687ns = ( 24.687 - 20.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+                         input delay                 15.000    15.000    <hidden>
+    D10                                               0.000    15.000 f  RST_SW
+                         net (fo=0)                   0.000    15.000    RST_SW
+    D10                  IBUF (Prop_ibuf_I_O)         1.399    16.399 f  RST_SW_IBUF_inst/O
+                         net (fo=137, routed)         3.298    19.697    gen_channels[15].ch_inst/RST_SW_IBUF
+    SLICE_X88Y99         LUT1 (Prop_lut1_I0_O)        0.105    19.802 r  gen_channels[15].ch_inst/FSM_sequential_state[3]_i_1/O
+                         net (fo=496, routed)         2.886    22.688    gen_channels[11].ch_inst/spi_start_reg_0
+    SLICE_X1Y142         FDRE                                         r  gen_channels[11].ch_inst/FSM_sequential_state_reg[1]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                     20.000    20.000 r  <hidden>
+    B8                                                0.000    20.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000    20.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         1.399    21.399 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.880    23.279    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    23.356 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        1.331    24.687    gen_channels[11].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X1Y142         FDRE                                         r  gen_channels[11].ch_inst/FSM_sequential_state_reg[1]/C
+                         clock pessimism              0.000    24.687    <hidden>
+                         clock uncertainty           -0.035    24.652    <hidden>
+    SLICE_X1Y142         FDRE (Setup_fdre_C_R)       -0.352    24.300    gen_channels[11].ch_inst/FSM_sequential_state_reg[1]
+  -------------------------------------------------------------------
+                         required time                         24.300    <hidden>
+                         arrival time                         -22.688    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.612    <hidden>
+
+Slack (MET) :             1.612ns  (required time - arrival time)
+  Source:                 RST_SW
+                            (input port clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            gen_channels[11].ch_inst/FSM_sequential_state_reg[2]/R
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             FPGA_CLK_50MHZ
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (FPGA_CLK_50MHZ rise@20.000ns - FPGA_CLK_50MHZ rise@0.000ns)
+  Data Path Delay:        7.688ns  (logic 1.504ns (19.560%)  route 6.184ns (80.440%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            15.000ns
+  Clock Path Skew:        4.687ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.687ns = ( 24.687 - 20.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+                         input delay                 15.000    15.000    <hidden>
+    D10                                               0.000    15.000 f  RST_SW
+                         net (fo=0)                   0.000    15.000    RST_SW
+    D10                  IBUF (Prop_ibuf_I_O)         1.399    16.399 f  RST_SW_IBUF_inst/O
+                         net (fo=137, routed)         3.298    19.697    gen_channels[15].ch_inst/RST_SW_IBUF
+    SLICE_X88Y99         LUT1 (Prop_lut1_I0_O)        0.105    19.802 r  gen_channels[15].ch_inst/FSM_sequential_state[3]_i_1/O
+                         net (fo=496, routed)         2.886    22.688    gen_channels[11].ch_inst/spi_start_reg_0
+    SLICE_X1Y142         FDRE                                         r  gen_channels[11].ch_inst/FSM_sequential_state_reg[2]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                     20.000    20.000 r  <hidden>
+    B8                                                0.000    20.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000    20.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         1.399    21.399 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.880    23.279    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    23.356 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        1.331    24.687    gen_channels[11].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X1Y142         FDRE                                         r  gen_channels[11].ch_inst/FSM_sequential_state_reg[2]/C
+                         clock pessimism              0.000    24.687    <hidden>
+                         clock uncertainty           -0.035    24.652    <hidden>
+    SLICE_X1Y142         FDRE (Setup_fdre_C_R)       -0.352    24.300    gen_channels[11].ch_inst/FSM_sequential_state_reg[2]
+  -------------------------------------------------------------------
+                         required time                         24.300    <hidden>
+                         arrival time                         -22.688    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.612    <hidden>
+
+Slack (MET) :             1.612ns  (required time - arrival time)
+  Source:                 RST_SW
+                            (input port clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            gen_channels[11].ch_inst/FSM_sequential_state_reg[3]/R
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             FPGA_CLK_50MHZ
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (FPGA_CLK_50MHZ rise@20.000ns - FPGA_CLK_50MHZ rise@0.000ns)
+  Data Path Delay:        7.688ns  (logic 1.504ns (19.560%)  route 6.184ns (80.440%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            15.000ns
+  Clock Path Skew:        4.687ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.687ns = ( 24.687 - 20.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+                         input delay                 15.000    15.000    <hidden>
+    D10                                               0.000    15.000 f  RST_SW
+                         net (fo=0)                   0.000    15.000    RST_SW
+    D10                  IBUF (Prop_ibuf_I_O)         1.399    16.399 f  RST_SW_IBUF_inst/O
+                         net (fo=137, routed)         3.298    19.697    gen_channels[15].ch_inst/RST_SW_IBUF
+    SLICE_X88Y99         LUT1 (Prop_lut1_I0_O)        0.105    19.802 r  gen_channels[15].ch_inst/FSM_sequential_state[3]_i_1/O
+                         net (fo=496, routed)         2.886    22.688    gen_channels[11].ch_inst/spi_start_reg_0
+    SLICE_X1Y142         FDRE                                         r  gen_channels[11].ch_inst/FSM_sequential_state_reg[3]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                     20.000    20.000 r  <hidden>
+    B8                                                0.000    20.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000    20.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         1.399    21.399 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.880    23.279    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    23.356 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        1.331    24.687    gen_channels[11].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X1Y142         FDRE                                         r  gen_channels[11].ch_inst/FSM_sequential_state_reg[3]/C
+                         clock pessimism              0.000    24.687    <hidden>
+                         clock uncertainty           -0.035    24.652    <hidden>
+    SLICE_X1Y142         FDRE (Setup_fdre_C_R)       -0.352    24.300    gen_channels[11].ch_inst/FSM_sequential_state_reg[3]
+  -------------------------------------------------------------------
+                         required time                         24.300    <hidden>
+                         arrival time                         -22.688    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.612    <hidden>
+
+Slack (MET) :             1.636ns  (required time - arrival time)
+  Source:                 RST_SW
+                            (input port clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            gen_channels[12].ch_inst/FSM_sequential_state_reg[0]/R
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             FPGA_CLK_50MHZ
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (FPGA_CLK_50MHZ rise@20.000ns - FPGA_CLK_50MHZ rise@0.000ns)
+  Data Path Delay:        7.587ns  (logic 1.504ns (19.820%)  route 6.083ns (80.180%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            15.000ns
+  Clock Path Skew:        4.681ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.681ns = ( 24.681 - 20.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+                         input delay                 15.000    15.000    <hidden>
+    D10                                               0.000    15.000 f  RST_SW
+                         net (fo=0)                   0.000    15.000    RST_SW
+    D10                  IBUF (Prop_ibuf_I_O)         1.399    16.399 f  RST_SW_IBUF_inst/O
+                         net (fo=137, routed)         3.298    19.697    gen_channels[15].ch_inst/RST_SW_IBUF
+    SLICE_X88Y99         LUT1 (Prop_lut1_I0_O)        0.105    19.802 r  gen_channels[15].ch_inst/FSM_sequential_state[3]_i_1/O
+                         net (fo=496, routed)         2.785    22.587    gen_channels[12].ch_inst/spi_start_reg_0
+    SLICE_X2Y133         FDRE                                         r  gen_channels[12].ch_inst/FSM_sequential_state_reg[0]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                     20.000    20.000 r  <hidden>
+    B8                                                0.000    20.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000    20.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         1.399    21.399 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.880    23.279    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    23.356 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        1.325    24.681    gen_channels[12].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X2Y133         FDRE                                         r  gen_channels[12].ch_inst/FSM_sequential_state_reg[0]/C
+                         clock pessimism              0.000    24.681    <hidden>
+                         clock uncertainty           -0.035    24.646    <hidden>
+    SLICE_X2Y133         FDRE (Setup_fdre_C_R)       -0.423    24.223    gen_channels[12].ch_inst/FSM_sequential_state_reg[0]
+  -------------------------------------------------------------------
+                         required time                         24.223    <hidden>
+                         arrival time                         -22.587    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.636    <hidden>
+
+Slack (MET) :             1.636ns  (required time - arrival time)
+  Source:                 RST_SW
+                            (input port clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            gen_channels[12].ch_inst/FSM_sequential_state_reg[1]/R
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             FPGA_CLK_50MHZ
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (FPGA_CLK_50MHZ rise@20.000ns - FPGA_CLK_50MHZ rise@0.000ns)
+  Data Path Delay:        7.587ns  (logic 1.504ns (19.820%)  route 6.083ns (80.180%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            15.000ns
+  Clock Path Skew:        4.681ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.681ns = ( 24.681 - 20.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+                         input delay                 15.000    15.000    <hidden>
+    D10                                               0.000    15.000 f  RST_SW
+                         net (fo=0)                   0.000    15.000    RST_SW
+    D10                  IBUF (Prop_ibuf_I_O)         1.399    16.399 f  RST_SW_IBUF_inst/O
+                         net (fo=137, routed)         3.298    19.697    gen_channels[15].ch_inst/RST_SW_IBUF
+    SLICE_X88Y99         LUT1 (Prop_lut1_I0_O)        0.105    19.802 r  gen_channels[15].ch_inst/FSM_sequential_state[3]_i_1/O
+                         net (fo=496, routed)         2.785    22.587    gen_channels[12].ch_inst/spi_start_reg_0
+    SLICE_X2Y133         FDRE                                         r  gen_channels[12].ch_inst/FSM_sequential_state_reg[1]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                     20.000    20.000 r  <hidden>
+    B8                                                0.000    20.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000    20.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         1.399    21.399 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.880    23.279    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    23.356 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        1.325    24.681    gen_channels[12].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X2Y133         FDRE                                         r  gen_channels[12].ch_inst/FSM_sequential_state_reg[1]/C
+                         clock pessimism              0.000    24.681    <hidden>
+                         clock uncertainty           -0.035    24.646    <hidden>
+    SLICE_X2Y133         FDRE (Setup_fdre_C_R)       -0.423    24.223    gen_channels[12].ch_inst/FSM_sequential_state_reg[1]
+  -------------------------------------------------------------------
+                         required time                         24.223    <hidden>
+                         arrival time                         -22.587    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.636    <hidden>
+
+Slack (MET) :             1.636ns  (required time - arrival time)
+  Source:                 RST_SW
+                            (input port clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            gen_channels[12].ch_inst/FSM_sequential_state_reg[2]/R
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             FPGA_CLK_50MHZ
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (FPGA_CLK_50MHZ rise@20.000ns - FPGA_CLK_50MHZ rise@0.000ns)
+  Data Path Delay:        7.587ns  (logic 1.504ns (19.820%)  route 6.083ns (80.180%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            15.000ns
+  Clock Path Skew:        4.681ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.681ns = ( 24.681 - 20.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+                         input delay                 15.000    15.000    <hidden>
+    D10                                               0.000    15.000 f  RST_SW
+                         net (fo=0)                   0.000    15.000    RST_SW
+    D10                  IBUF (Prop_ibuf_I_O)         1.399    16.399 f  RST_SW_IBUF_inst/O
+                         net (fo=137, routed)         3.298    19.697    gen_channels[15].ch_inst/RST_SW_IBUF
+    SLICE_X88Y99         LUT1 (Prop_lut1_I0_O)        0.105    19.802 r  gen_channels[15].ch_inst/FSM_sequential_state[3]_i_1/O
+                         net (fo=496, routed)         2.785    22.587    gen_channels[12].ch_inst/spi_start_reg_0
+    SLICE_X2Y133         FDRE                                         r  gen_channels[12].ch_inst/FSM_sequential_state_reg[2]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                     20.000    20.000 r  <hidden>
+    B8                                                0.000    20.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000    20.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         1.399    21.399 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.880    23.279    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    23.356 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        1.325    24.681    gen_channels[12].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X2Y133         FDRE                                         r  gen_channels[12].ch_inst/FSM_sequential_state_reg[2]/C
+                         clock pessimism              0.000    24.681    <hidden>
+                         clock uncertainty           -0.035    24.646    <hidden>
+    SLICE_X2Y133         FDRE (Setup_fdre_C_R)       -0.423    24.223    gen_channels[12].ch_inst/FSM_sequential_state_reg[2]
+  -------------------------------------------------------------------
+                         required time                         24.223    <hidden>
+                         arrival time                         -22.587    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.636    <hidden>
+
+Slack (MET) :             1.636ns  (required time - arrival time)
+  Source:                 RST_SW
+                            (input port clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            gen_channels[12].ch_inst/FSM_sequential_state_reg[3]/R
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             FPGA_CLK_50MHZ
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (FPGA_CLK_50MHZ rise@20.000ns - FPGA_CLK_50MHZ rise@0.000ns)
+  Data Path Delay:        7.587ns  (logic 1.504ns (19.820%)  route 6.083ns (80.180%))
+  Logic Levels:           2  (IBUF=1 LUT1=1)
+  Input Delay:            15.000ns
+  Clock Path Skew:        4.681ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.681ns = ( 24.681 - 20.000 ) 
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+                         input delay                 15.000    15.000    <hidden>
+    D10                                               0.000    15.000 f  RST_SW
+                         net (fo=0)                   0.000    15.000    RST_SW
+    D10                  IBUF (Prop_ibuf_I_O)         1.399    16.399 f  RST_SW_IBUF_inst/O
+                         net (fo=137, routed)         3.298    19.697    gen_channels[15].ch_inst/RST_SW_IBUF
+    SLICE_X88Y99         LUT1 (Prop_lut1_I0_O)        0.105    19.802 r  gen_channels[15].ch_inst/FSM_sequential_state[3]_i_1/O
+                         net (fo=496, routed)         2.785    22.587    gen_channels[12].ch_inst/spi_start_reg_0
+    SLICE_X2Y133         FDRE                                         r  gen_channels[12].ch_inst/FSM_sequential_state_reg[3]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                     20.000    20.000 r  <hidden>
+    B8                                                0.000    20.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000    20.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         1.399    21.399 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.880    23.279    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    23.356 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        1.325    24.681    gen_channels[12].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X2Y133         FDRE                                         r  gen_channels[12].ch_inst/FSM_sequential_state_reg[3]/C
+                         clock pessimism              0.000    24.681    <hidden>
+                         clock uncertainty           -0.035    24.646    <hidden>
+    SLICE_X2Y133         FDRE (Setup_fdre_C_R)       -0.423    24.223    gen_channels[12].ch_inst/FSM_sequential_state_reg[3]
+  -------------------------------------------------------------------
+                         required time                         24.223    <hidden>
+                         arrival time                         -22.587    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  1.636    <hidden>
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.080ns  (arrival time - required time)
+  Source:                 RST_SW
+                            (input port clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            gen_channels[12].ch_inst/spi_done_reg/D
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             FPGA_CLK_50MHZ
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (FPGA_CLK_50MHZ rise@0.000ns - FPGA_CLK_50MHZ rise@0.000ns)
+  Data Path Delay:        3.293ns  (logic 1.417ns (43.026%)  route 1.876ns (56.974%))
+  Logic Levels:           2  (IBUF=1 LUT3=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        4.958ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.958ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+                         input delay                  2.000     2.000    <hidden>
+    D10                                               0.000     2.000 r  RST_SW
+                         net (fo=0)                   0.000     2.000    RST_SW
+    D10                  IBUF (Prop_ibuf_I_O)         1.333     3.333 r  RST_SW_IBUF_inst/O
+                         net (fo=137, routed)         1.876     5.209    gen_channels[12].ch_inst/RST_SW_IBUF
+    SLICE_X1Y130         LUT3 (Prop_lut3_I1_O)        0.084     5.293 r  gen_channels[12].ch_inst/spi_done_i_1__11/O
+                         net (fo=1, routed)           0.000     5.293    gen_channels[12].ch_inst/spi_done_i_1__11_n_0
+    SLICE_X1Y130         FDRE                                         r  gen_channels[12].ch_inst/spi_done_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+    B8                                                0.000     0.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000     0.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         1.466     1.466 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.982     3.448    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081     3.529 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        1.429     4.958    gen_channels[12].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X1Y130         FDRE                                         r  gen_channels[12].ch_inst/spi_done_reg/C
+                         clock pessimism              0.000     4.958    <hidden>
+                         clock uncertainty            0.035     4.993    <hidden>
+    SLICE_X1Y130         FDRE (Hold_fdre_C_D)         0.220     5.213    gen_channels[12].ch_inst/spi_done_reg
+  -------------------------------------------------------------------
+                         required time                         -5.213    <hidden>
+                         arrival time                           5.293    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.080    <hidden>
+
+Slack (MET) :             0.101ns  (arrival time - required time)
+  Source:                 gen_channels[5].ch_inst/FSM_sequential_state_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            gen_channels[5].ch_inst/spi_data_req_reg[20]/D
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             FPGA_CLK_50MHZ
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (FPGA_CLK_50MHZ rise@0.000ns - FPGA_CLK_50MHZ rise@0.000ns)
+  Data Path Delay:        0.473ns  (logic 0.210ns (44.357%)  route 0.263ns (55.643%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        0.266ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.263ns
+    Source Clock Delay      (SCD):    1.742ns
+    Clock Pessimism Removal (CPR):    0.255ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+    B8                                                0.000     0.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000     0.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         0.302     0.302 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.808     1.110    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.136 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        0.607     1.742    gen_channels[5].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X84Y99         FDRE                                         r  gen_channels[5].ch_inst/FSM_sequential_state_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X84Y99         FDRE (Prop_fdre_C_Q)         0.164     1.906 f  gen_channels[5].ch_inst/FSM_sequential_state_reg[2]/Q
+                         net (fo=11, routed)          0.263     2.170    gen_channels[5].ch_inst/state[2]
+    SLICE_X85Y101        LUT2 (Prop_lut2_I1_O)        0.046     2.216 r  gen_channels[5].ch_inst/spi_data_req[20]_i_1__2/O
+                         net (fo=1, routed)           0.000     2.216    gen_channels[5].ch_inst/spi_data_req[20]_i_1__2_n_0
+    SLICE_X85Y101        FDRE                                         r  gen_channels[5].ch_inst/spi_data_req_reg[20]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+    B8                                                0.000     0.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000     0.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         0.490     0.490 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.871     1.361    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.390 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        0.873     2.263    gen_channels[5].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X85Y101        FDRE                                         r  gen_channels[5].ch_inst/spi_data_req_reg[20]/C
+                         clock pessimism             -0.255     2.008    <hidden>
+    SLICE_X85Y101        FDRE (Hold_fdre_C_D)         0.107     2.115    gen_channels[5].ch_inst/spi_data_req_reg[20]
+  -------------------------------------------------------------------
+                         required time                         -2.115    <hidden>
+                         arrival time                           2.216    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.101    <hidden>
+
+Slack (MET) :             0.102ns  (arrival time - required time)
+  Source:                 RST_SW
+                            (input port clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            gen_channels[11].ch_inst/spi_bits_req_reg[4]/CE
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             FPGA_CLK_50MHZ
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (FPGA_CLK_50MHZ rise@0.000ns - FPGA_CLK_50MHZ rise@0.000ns)
+  Data Path Delay:        3.066ns  (logic 1.417ns (46.220%)  route 1.649ns (53.780%))
+  Logic Levels:           2  (IBUF=1 LUT6=1)
+  Input Delay:            2.000ns
+  Clock Path Skew:        4.968ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.968ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+                         input delay                  2.000     2.000    <hidden>
+    D10                                               0.000     2.000 r  RST_SW
+                         net (fo=0)                   0.000     2.000    RST_SW
+    D10                  IBUF (Prop_ibuf_I_O)         1.333     3.333 r  RST_SW_IBUF_inst/O
+                         net (fo=137, routed)         1.410     4.743    gen_channels[11].ch_inst/RST_SW_IBUF
+    SLICE_X1Y141         LUT6 (Prop_lut6_I5_O)        0.084     4.827 r  gen_channels[11].ch_inst/spi_bits_req[3]_i_1__10/O
+                         net (fo=5, routed)           0.238     5.066    gen_channels[11].ch_inst/spi_bits_req[3]_i_1__10_n_0
+    SLICE_X0Y141         FDRE                                         r  gen_channels[11].ch_inst/spi_bits_req_reg[4]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+    B8                                                0.000     0.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000     0.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         1.466     1.466 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           1.982     3.448    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081     3.529 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        1.439     4.968    gen_channels[11].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X0Y141         FDRE                                         r  gen_channels[11].ch_inst/spi_bits_req_reg[4]/C
+                         clock pessimism              0.000     4.968    <hidden>
+                         clock uncertainty            0.035     5.003    <hidden>
+    SLICE_X0Y141         FDRE (Hold_fdre_C_CE)       -0.040     4.963    gen_channels[11].ch_inst/spi_bits_req_reg[4]
+  -------------------------------------------------------------------
+                         required time                         -4.963    <hidden>
+                         arrival time                           5.066    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.102    <hidden>
+
+Slack (MET) :             0.116ns  (arrival time - required time)
+  Source:                 gen_channels[5].ch_inst/FSM_sequential_state_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            gen_channels[5].ch_inst/spi_bits_req_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             FPGA_CLK_50MHZ
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (FPGA_CLK_50MHZ rise@0.000ns - FPGA_CLK_50MHZ rise@0.000ns)
+  Data Path Delay:        0.472ns  (logic 0.209ns (44.240%)  route 0.263ns (55.760%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        0.266ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.263ns
+    Source Clock Delay      (SCD):    1.742ns
+    Clock Pessimism Removal (CPR):    0.255ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+    B8                                                0.000     0.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000     0.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         0.302     0.302 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.808     1.110    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.136 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        0.607     1.742    gen_channels[5].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X84Y99         FDRE                                         r  gen_channels[5].ch_inst/FSM_sequential_state_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X84Y99         FDRE (Prop_fdre_C_Q)         0.164     1.906 r  gen_channels[5].ch_inst/FSM_sequential_state_reg[2]/Q
+                         net (fo=11, routed)          0.263     2.170    gen_channels[5].ch_inst/state[2]
+    SLICE_X85Y101        LUT2 (Prop_lut2_I0_O)        0.045     2.215 r  gen_channels[5].ch_inst/spi_bits_req[3]_i_2__9/O
+                         net (fo=1, routed)           0.000     2.215    gen_channels[5].ch_inst/spi_bits_req[3]_i_2__9_n_0
+    SLICE_X85Y101        FDRE                                         r  gen_channels[5].ch_inst/spi_bits_req_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+    B8                                                0.000     0.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000     0.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         0.490     0.490 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.871     1.361    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.390 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        0.873     2.263    gen_channels[5].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X85Y101        FDRE                                         r  gen_channels[5].ch_inst/spi_bits_req_reg[3]/C
+                         clock pessimism             -0.255     2.008    <hidden>
+    SLICE_X85Y101        FDRE (Hold_fdre_C_D)         0.091     2.099    gen_channels[5].ch_inst/spi_bits_req_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -2.099    <hidden>
+                         arrival time                           2.215    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.116    <hidden>
+
+Slack (MET) :             0.124ns  (arrival time - required time)
+  Source:                 gen_channels[5].ch_inst/spi_bit_cnt_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            gen_channels[5].ch_inst/spi_bit_cnt_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             FPGA_CLK_50MHZ
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (FPGA_CLK_50MHZ rise@0.000ns - FPGA_CLK_50MHZ rise@0.000ns)
+  Data Path Delay:        0.494ns  (logic 0.227ns (45.939%)  route 0.267ns (54.061%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.278ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.270ns
+    Source Clock Delay      (SCD):    1.737ns
+    Clock Pessimism Removal (CPR):    0.255ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+    B8                                                0.000     0.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000     0.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         0.302     0.302 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.808     1.110    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.136 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        0.602     1.737    gen_channels[5].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X87Y100        FDRE                                         r  gen_channels[5].ch_inst/spi_bit_cnt_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X87Y100        FDRE (Prop_fdre_C_Q)         0.128     1.865 r  gen_channels[5].ch_inst/spi_bit_cnt_reg[2]/Q
+                         net (fo=4, routed)           0.267     2.133    gen_channels[5].ch_inst/spi_bit_cnt_reg[2]
+    SLICE_X86Y99         LUT6 (Prop_lut6_I3_O)        0.099     2.232 r  gen_channels[5].ch_inst/spi_bit_cnt[3]_i_1__4/O
+                         net (fo=1, routed)           0.000     2.232    gen_channels[5].ch_inst/p_0_in__4[3]
+    SLICE_X86Y99         FDRE                                         r  gen_channels[5].ch_inst/spi_bit_cnt_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+    B8                                                0.000     0.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000     0.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         0.490     0.490 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.871     1.361    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.390 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        0.880     2.270    gen_channels[5].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X86Y99         FDRE                                         r  gen_channels[5].ch_inst/spi_bit_cnt_reg[3]/C
+                         clock pessimism             -0.255     2.015    <hidden>
+    SLICE_X86Y99         FDRE (Hold_fdre_C_D)         0.092     2.107    gen_channels[5].ch_inst/spi_bit_cnt_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -2.107    <hidden>
+                         arrival time                           2.232    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.124    <hidden>
+
+Slack (MET) :             0.129ns  (arrival time - required time)
+  Source:                 gen_channels[5].ch_inst/tx_reg_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            gen_channels[5].ch_inst/tx_reg_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             FPGA_CLK_50MHZ
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (FPGA_CLK_50MHZ rise@0.000ns - FPGA_CLK_50MHZ rise@0.000ns)
+  Data Path Delay:        0.487ns  (logic 0.226ns (46.409%)  route 0.261ns (53.591%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.266ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.264ns
+    Source Clock Delay      (SCD):    1.743ns
+    Clock Pessimism Removal (CPR):    0.255ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+    B8                                                0.000     0.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000     0.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         0.302     0.302 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.808     1.110    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.136 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        0.608     1.743    gen_channels[5].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X86Y99         FDRE                                         r  gen_channels[5].ch_inst/tx_reg_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X86Y99         FDRE (Prop_fdre_C_Q)         0.128     1.871 r  gen_channels[5].ch_inst/tx_reg_reg[2]/Q
+                         net (fo=1, routed)           0.261     2.132    gen_channels[5].ch_inst/tx_reg__4[2]
+    SLICE_X86Y100        LUT3 (Prop_lut3_I2_O)        0.098     2.230 r  gen_channels[5].ch_inst/tx_reg[3]_i_1__2/O
+                         net (fo=1, routed)           0.000     2.230    gen_channels[5].ch_inst/tx_reg[3]_i_1__2_n_0
+    SLICE_X86Y100        FDRE                                         r  gen_channels[5].ch_inst/tx_reg_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+    B8                                                0.000     0.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000     0.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         0.490     0.490 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.871     1.361    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.390 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        0.873     2.264    gen_channels[5].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X86Y100        FDRE                                         r  gen_channels[5].ch_inst/tx_reg_reg[3]/C
+                         clock pessimism             -0.255     2.009    <hidden>
+    SLICE_X86Y100        FDRE (Hold_fdre_C_D)         0.092     2.101    gen_channels[5].ch_inst/tx_reg_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -2.101    <hidden>
+                         arrival time                           2.230    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.129    <hidden>
+
+Slack (MET) :             0.135ns  (arrival time - required time)
+  Source:                 gen_channels[14].ch_inst/tx_reg_reg[14]/C
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            gen_channels[14].ch_inst/tx_reg_reg[15]/D
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             FPGA_CLK_50MHZ
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (FPGA_CLK_50MHZ rise@0.000ns - FPGA_CLK_50MHZ rise@0.000ns)
+  Data Path Delay:        0.279ns  (logic 0.189ns (67.634%)  route 0.090ns (32.366%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.257ns
+    Source Clock Delay      (SCD):    1.730ns
+    Clock Pessimism Removal (CPR):    0.513ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+    B8                                                0.000     0.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000     0.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         0.302     0.302 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.808     1.110    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.136 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        0.595     1.730    gen_channels[14].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X3Y112         FDRE                                         r  gen_channels[14].ch_inst/tx_reg_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y112         FDRE (Prop_fdre_C_Q)         0.141     1.871 r  gen_channels[14].ch_inst/tx_reg_reg[14]/Q
+                         net (fo=1, routed)           0.090     1.962    gen_channels[14].ch_inst/tx_reg__13[14]
+    SLICE_X2Y112         LUT3 (Prop_lut3_I2_O)        0.048     2.010 r  gen_channels[14].ch_inst/tx_reg[15]_i_1__13/O
+                         net (fo=1, routed)           0.000     2.010    gen_channels[14].ch_inst/tx_reg[15]_i_1__13_n_0
+    SLICE_X2Y112         FDRE                                         r  gen_channels[14].ch_inst/tx_reg_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+    B8                                                0.000     0.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000     0.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         0.490     0.490 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.871     1.361    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.390 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        0.867     2.257    gen_channels[14].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X2Y112         FDRE                                         r  gen_channels[14].ch_inst/tx_reg_reg[15]/C
+                         clock pessimism             -0.513     1.743    <hidden>
+    SLICE_X2Y112         FDRE (Hold_fdre_C_D)         0.131     1.874    gen_channels[14].ch_inst/tx_reg_reg[15]
+  -------------------------------------------------------------------
+                         required time                         -1.874    <hidden>
+                         arrival time                           2.010    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.135    <hidden>
+
+Slack (MET) :             0.137ns  (arrival time - required time)
+  Source:                 gen_channels[11].ch_inst/tx_reg_reg[17]/C
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            gen_channels[11].ch_inst/tx_reg_reg[18]/D
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             FPGA_CLK_50MHZ
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (FPGA_CLK_50MHZ rise@0.000ns - FPGA_CLK_50MHZ rise@0.000ns)
+  Data Path Delay:        0.197ns  (logic 0.141ns (71.475%)  route 0.056ns (28.525%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.259ns
+    Source Clock Delay      (SCD):    1.731ns
+    Clock Pessimism Removal (CPR):    0.514ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+    B8                                                0.000     0.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000     0.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         0.302     0.302 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.808     1.110    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.136 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        0.596     1.731    gen_channels[11].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X1Y139         FDRE                                         r  gen_channels[11].ch_inst/tx_reg_reg[17]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y139         FDRE (Prop_fdre_C_Q)         0.141     1.872 r  gen_channels[11].ch_inst/tx_reg_reg[17]/Q
+                         net (fo=1, routed)           0.056     1.929    gen_channels[11].ch_inst/tx_reg__10[17]
+    SLICE_X0Y139         FDRE                                         r  gen_channels[11].ch_inst/tx_reg_reg[18]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+    B8                                                0.000     0.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000     0.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         0.490     0.490 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.871     1.361    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.390 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        0.869     2.259    gen_channels[11].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X0Y139         FDRE                                         r  gen_channels[11].ch_inst/tx_reg_reg[18]/C
+                         clock pessimism             -0.514     1.744    <hidden>
+    SLICE_X0Y139         FDRE (Hold_fdre_C_D)         0.047     1.791    gen_channels[11].ch_inst/tx_reg_reg[18]
+  -------------------------------------------------------------------
+                         required time                         -1.791    <hidden>
+                         arrival time                           1.929    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.137    <hidden>
+
+Slack (MET) :             0.146ns  (arrival time - required time)
+  Source:                 gen_channels[9].ch_inst/tx_reg_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            gen_channels[9].ch_inst/tx_reg_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             FPGA_CLK_50MHZ
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (FPGA_CLK_50MHZ rise@0.000ns - FPGA_CLK_50MHZ rise@0.000ns)
+  Data Path Delay:        0.257ns  (logic 0.141ns (54.965%)  route 0.116ns (45.035%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.039ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.265ns
+    Source Clock Delay      (SCD):    1.737ns
+    Clock Pessimism Removal (CPR):    0.489ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+    B8                                                0.000     0.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000     0.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         0.302     0.302 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.808     1.110    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.136 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        0.602     1.737    gen_channels[9].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X85Y63         FDRE                                         r  gen_channels[9].ch_inst/tx_reg_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X85Y63         FDRE (Prop_fdre_C_Q)         0.141     1.878 r  gen_channels[9].ch_inst/tx_reg_reg[1]/Q
+                         net (fo=1, routed)           0.116     1.994    gen_channels[9].ch_inst/tx_reg__8[1]
+    SLICE_X86Y62         FDRE                                         r  gen_channels[9].ch_inst/tx_reg_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+    B8                                                0.000     0.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000     0.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         0.490     0.490 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.871     1.361    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.390 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        0.875     2.265    gen_channels[9].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X86Y62         FDRE                                         r  gen_channels[9].ch_inst/tx_reg_reg[2]/C
+                         clock pessimism             -0.489     1.776    <hidden>
+    SLICE_X86Y62         FDRE (Hold_fdre_C_D)         0.072     1.848    gen_channels[9].ch_inst/tx_reg_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.848    <hidden>
+                         arrival time                           1.994    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.146    <hidden>
+
+Slack (MET) :             0.150ns  (arrival time - required time)
+  Source:                 gen_channels[3].ch_inst/tx_reg_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            gen_channels[3].ch_inst/tx_reg_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by FPGA_CLK_50MHZ  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             FPGA_CLK_50MHZ
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (FPGA_CLK_50MHZ rise@0.000ns - FPGA_CLK_50MHZ rise@0.000ns)
+  Data Path Delay:        0.185ns  (logic 0.128ns (69.109%)  route 0.057ns (30.891%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.258ns
+    Source Clock Delay      (SCD):    1.732ns
+    Clock Pessimism Removal (CPR):    0.512ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+    B8                                                0.000     0.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000     0.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         0.302     0.302 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.808     1.110    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.136 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        0.597     1.732    gen_channels[3].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X86Y113        FDRE                                         r  gen_channels[3].ch_inst/tx_reg_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X86Y113        FDRE (Prop_fdre_C_Q)         0.128     1.860 r  gen_channels[3].ch_inst/tx_reg_reg[6]/Q
+                         net (fo=1, routed)           0.057     1.918    gen_channels[3].ch_inst/tx_reg__2[6]
+    SLICE_X87Y113        FDRE                                         r  gen_channels[3].ch_inst/tx_reg_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock FPGA_CLK_50MHZ rise edge)
+                                                      0.000     0.000 r  <hidden>
+    B8                                                0.000     0.000 r  FPGA_CLK_50MHZ
+                         net (fo=0)                   0.000     0.000    FPGA_CLK_50MHZ
+    B8                   IBUF (Prop_ibuf_I_O)         0.490     0.490 r  FPGA_CLK_50MHZ_IBUF_inst/O
+                         net (fo=1, routed)           0.871     1.361    FPGA_CLK_50MHZ_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.390 r  FPGA_CLK_50MHZ_IBUF_BUFG_inst/O
+                         net (fo=1129, routed)        0.867     2.258    gen_channels[3].ch_inst/FPGA_CLK_50MHZ_IBUF_BUFG
+    SLICE_X87Y113        FDRE                                         r  gen_channels[3].ch_inst/tx_reg_reg[7]/C
+                         clock pessimism             -0.512     1.745    <hidden>
+    SLICE_X87Y113        FDRE (Hold_fdre_C_D)         0.022     1.767    gen_channels[3].ch_inst/tx_reg_reg[7]
+  -------------------------------------------------------------------
+                         required time                         -1.767    <hidden>
+                         arrival time                           1.918    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.150    <hidden>
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         FPGA_CLK_50MHZ
+Waveform(ns):       { 0.000 10.000 }
+Period(ns):         20.000
+Sources:            { FPGA_CLK_50MHZ }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     BUFG/I   n/a            1.592         20.000      18.408     BUFGCTRL_X0Y16  FPGA_CLK_50MHZ_IBUF_BUFG_inst/I
+Min Period        n/a     FDRE/C   n/a            1.000         20.000      19.000     SLICE_X1Y47     hb_cnt_reg[0]/C
+Min Period        n/a     FDRE/C   n/a            1.000         20.000      19.000     SLICE_X0Y48     hb_cnt_reg[10]/C
+Min Period        n/a     FDRE/C   n/a            1.000         20.000      19.000     SLICE_X0Y48     hb_cnt_reg[11]/C
+Min Period        n/a     FDRE/C   n/a            1.000         20.000      19.000     SLICE_X0Y48     hb_cnt_reg[12]/C
+Min Period        n/a     FDRE/C   n/a            1.000         20.000      19.000     SLICE_X0Y49     hb_cnt_reg[13]/C
+Min Period        n/a     FDRE/C   n/a            1.000         20.000      19.000     SLICE_X0Y49     hb_cnt_reg[14]/C
+Min Period        n/a     FDRE/C   n/a            1.000         20.000      19.000     SLICE_X0Y49     hb_cnt_reg[15]/C
+Min Period        n/a     FDRE/C   n/a            1.000         20.000      19.000     SLICE_X0Y49     hb_cnt_reg[16]/C
+Min Period        n/a     FDRE/C   n/a            1.000         20.000      19.000     SLICE_X0Y50     hb_cnt_reg[17]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X1Y47     hb_cnt_reg[0]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X1Y47     hb_cnt_reg[0]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X0Y48     hb_cnt_reg[10]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X0Y48     hb_cnt_reg[10]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X0Y48     hb_cnt_reg[11]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X0Y48     hb_cnt_reg[11]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X0Y48     hb_cnt_reg[12]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X0Y48     hb_cnt_reg[12]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X0Y49     hb_cnt_reg[13]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X0Y49     hb_cnt_reg[13]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X1Y47     hb_cnt_reg[0]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X1Y47     hb_cnt_reg[0]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X0Y48     hb_cnt_reg[10]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X0Y48     hb_cnt_reg[10]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X0Y48     hb_cnt_reg[11]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X0Y48     hb_cnt_reg[11]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X0Y48     hb_cnt_reg[12]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X0Y48     hb_cnt_reg[12]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X0Y49     hb_cnt_reg[13]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X0Y49     hb_cnt_reg[13]/C
+
+
+

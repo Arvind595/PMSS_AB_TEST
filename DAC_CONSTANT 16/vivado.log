@@ -1,0 +1,1066 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 06-aug-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Tue Aug 25 17:29:23 2026
+# Process ID         : 12096
+# Current directory  : C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent19596 C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.xpr
+# Log file           : C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/vivado.log
+# Journal file       : C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16\vivado.jou
+# Running On         : RTLPC
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-14700
+# CPU Frequency      : 2112 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 16851 MB
+# Swap memory        : 8759 MB
+# Total Virtual      : 25610 MB
+# Available Virtual  : 5229 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-5713] Board part '' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2026.1/Vivado/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 1788.434 ; gain = 308.711
+update_compile_order -fileset sources_1
+close [ open {C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test_16ch.vhd} w ]
+add_files {{C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test_16ch.vhd}}
+set_property file_type {VHDL 2008} [get_files  {{C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test_16ch.vhd}}]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+synth_design -top dac_test_16ch -part xc7a100tcsg324-2 -lint 
+Command: synth_design -top dac_test_16ch -part xc7a100tcsg324-2 -lint
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8524
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2369.617 ; gain = 553.656
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-638] synthesizing module 'dac_test_16ch' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test_16ch.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'dac_test_16ch' (2#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test_16ch.vhd:36]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2491.051 ; gain = 675.090
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Tue Aug 25 17:32:09 2026
+| Host         : RTLPC running 64-bit major release  (build 9200)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++---------+----------+--------------+----------+
+| Rule ID | Severity | # Violations | # Waived |
++---------+----------+--------------+----------+
+
+
+INFO: [Synth 37-85] Total of 0 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2491.051 ; gain = 675.090
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+11 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2491.051 ; gain = 680.977
+launch_simulation
+Command: launch_simulation  -mode behavioral
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Tue Aug 25 17:39:06 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'dac_test_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/AMDDesignTools/2026.1/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'dac_test_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj dac_test_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/dac_test_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dac_test_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot dac_test_tb_behav xil_defaultlib.dac_test_tb -log elaborate.log"
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot dac_test_tb_behav xil_defaultlib.dac_test_tb -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package std.env
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.dac_test [\dac_test(sim_mode=true)\]
+Compiling architecture behavior of entity xil_defaultlib.dac_test_tb
+Built simulation snapshot dac_test_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dac_test_tb_behav -key {Behavioral:sim_1:Functional:dac_test_tb} -tclbatch {dac_test_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source dac_test_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100ms
+$stop called at time : 500100 ns : File "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/dac_test_tb.vhd" Line 100
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 2495.652 ; gain = 4.602
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dac_test_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100ms
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 2495.652 ; gain = 4.602
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+export_ip_user_files -of_objects  [get_files {{C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/dac_test_tb.vhd}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/dac_test_tb.vhd}}
+file delete -force {C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/dac_test_tb.vhd}
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+launch_simulation
+Command: launch_simulation  -mode behavioral
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Tue Aug 25 17:41:09 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'dac_test_16ch'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/AMDDesignTools/2026.1/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'dac_test_16ch' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj dac_test_16ch_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dac_ad3551r_ch'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test_16ch.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dac_test_16ch'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot dac_test_16ch_behav xil_defaultlib.dac_test_16ch -log elaborate.log"
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot dac_test_16ch_behav xil_defaultlib.dac_test_16ch -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [dac_ad3551r_ch_default]
+Compiling architecture behavioral of entity xil_defaultlib.dac_test_16ch
+Built simulation snapshot dac_test_16ch_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dac_test_16ch_behav -key {Behavioral:sim_1:Functional:dac_test_16ch} -tclbatch {dac_test_16ch.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source dac_test_16ch.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100ms
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dac_test_16ch_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd} w ]
+add_files -fileset sim_1 {{C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd}}
+set_property file_type {VHDL 2008} [get_files  {{C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd}}]
+update_compile_order -fileset sim_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+update_compile_order -fileset sim_1
+synth_design -top dac_test_16ch -part xc7a100tcsg324-2 -lint 
+Command: synth_design -top dac_test_16ch -part xc7a100tcsg324-2 -lint
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3479.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-638] synthesizing module 'dac_test_16ch' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test_16ch.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1000110011001100 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized0' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1111001100110010 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized0' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized1' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1001100110011001 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized1' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized2' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1111111111111111 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized2' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized3' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1010011001100110 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized3' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized4' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1001001100110011 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized4' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized5' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1011001100110011 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized5' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized6' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1001111111111111 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized6' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized7' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1011111111111111 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized7' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized8' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1010110011001100 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized8' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized9' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1100110011001100 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized9' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized10' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1011100110011001 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized10' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized11' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1101100110011001 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized11' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized12' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1100011001100110 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized12' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized13' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1110011001100110 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized13' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized14' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1101001100110010 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized14' (1#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'dac_test_16ch' (2#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test_16ch.vhd:36]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3479.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Tue Aug 25 17:58:28 2026
+| Host         : RTLPC running 64-bit major release  (build 9200)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++---------+----------+--------------+----------+
+| Rule ID | Severity | # Violations | # Waived |
++---------+----------+--------------+----------+
+
+
+INFO: [Synth 37-85] Total of 0 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3479.453 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+39 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3479.453 ; gain = 0.000
+reset_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+launch_simulation
+Command: launch_simulation  -mode behavioral
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Tue Aug 25 17:58:48 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'dac_test_16ch_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/AMDDesignTools/2026.1/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'dac_test_16ch_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj dac_test_16ch_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dac_ad3551r_ch'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test_16ch.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dac_test_16ch'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dac_test_16ch_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot dac_test_16ch_tb_behav xil_defaultlib.dac_test_16ch_tb -log elaborate.log"
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot dac_test_16ch_tb_behav xil_defaultlib.dac_test_16ch_tb -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.env
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_test_16ch [\dac_test_16ch(sim_mode=true)\]
+Compiling architecture behavior of entity xil_defaultlib.dac_test_16ch_tb
+Built simulation snapshot dac_test_16ch_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dac_test_16ch_tb_behav -key {Behavioral:sim_1:Functional:dac_test_16ch_tb} -tclbatch {dac_test_16ch_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source dac_test_16ch_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100ms
+Error: CH0: DAC-write frame = 0x2A8CCC (24 bits), expected 0x2A8000 (24 bits)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(0)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH0: FAIL - see error(s) above
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(0)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH1: DAC-write frame = 0x2AF332 (24 bits), expected 0x2A8000 (24 bits)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(1)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH1: FAIL - see error(s) above
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(1)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH2: DAC-write frame = 0x2A9999 (24 bits), expected 0x2A8000 (24 bits)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(2)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH2: FAIL - see error(s) above
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(2)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH3: DAC-write frame = 0x2AFFFF (24 bits), expected 0x2A8000 (24 bits)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(3)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH3: FAIL - see error(s) above
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(3)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH4: DAC-write frame = 0x2AA666 (24 bits), expected 0x2A8000 (24 bits)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(4)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH4: FAIL - see error(s) above
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(4)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH5: DAC-write frame = 0x2A9333 (24 bits), expected 0x2A8000 (24 bits)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(5)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH5: FAIL - see error(s) above
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(5)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH6: DAC-write frame = 0x2AB333 (24 bits), expected 0x2A8000 (24 bits)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(6)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH6: FAIL - see error(s) above
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(6)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH7: DAC-write frame = 0x2A9FFF (24 bits), expected 0x2A8000 (24 bits)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(7)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH7: FAIL - see error(s) above
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(7)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH8: DAC-write frame = 0x2ABFFF (24 bits), expected 0x2A8000 (24 bits)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(8)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH8: FAIL - see error(s) above
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(8)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH9: DAC-write frame = 0x2AACCC (24 bits), expected 0x2A8000 (24 bits)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(9)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH9: FAIL - see error(s) above
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(9)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH10: DAC-write frame = 0x2ACCCC (24 bits), expected 0x2A8000 (24 bits)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(10)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH10: FAIL - see error(s) above
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(10)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH11: DAC-write frame = 0x2AB999 (24 bits), expected 0x2A8000 (24 bits)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(11)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH11: FAIL - see error(s) above
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(11)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH12: DAC-write frame = 0x2AD999 (24 bits), expected 0x2A8000 (24 bits)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(12)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH12: FAIL - see error(s) above
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(12)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH13: DAC-write frame = 0x2AC666 (24 bits), expected 0x2A8000 (24 bits)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(13)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH13: FAIL - see error(s) above
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(13)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH14: DAC-write frame = 0x2AE666 (24 bits), expected 0x2A8000 (24 bits)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(14)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH14: FAIL - see error(s) above
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(14)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH15: DAC-write frame = 0x2AD332 (24 bits), expected 0x2A8000 (24 bits)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(15)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: CH15: FAIL - see error(s) above
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(15)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: --------------------------------------------------------------
+Time: 300100 ns  Iteration: 0  Process: /dac_test_16ch_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Error: TESTBENCH RESULT: FAIL - channel(s) with errors, ch_fail = FFFF
+Time: 300100 ns  Iteration: 0  Process: /dac_test_16ch_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: --------------------------------------------------------------
+Time: 300100 ns  Iteration: 0  Process: /dac_test_16ch_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+$stop called at time : 300100 ns : File "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd" Line 132
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dac_test_16ch_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100ms
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 3479.453 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+launch_simulation
+Command: launch_simulation  -mode behavioral
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Tue Aug 25 18:00:39 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'dac_test_16ch_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/AMDDesignTools/2026.1/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'dac_test_16ch_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj dac_test_16ch_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dac_ad3551r_ch'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test_16ch.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dac_test_16ch'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dac_test_16ch_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot dac_test_16ch_tb_behav xil_defaultlib.dac_test_16ch_tb -log elaborate.log"
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot dac_test_16ch_tb_behav xil_defaultlib.dac_test_16ch_tb -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.env
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true)\]
+Compiling architecture behavioral of entity xil_defaultlib.dac_test_16ch [\dac_test_16ch(sim_mode=true)\]
+Compiling architecture behavior of entity xil_defaultlib.dac_test_16ch_tb
+Built simulation snapshot dac_test_16ch_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dac_test_16ch_tb_behav -key {Behavioral:sim_1:Functional:dac_test_16ch_tb} -tclbatch {dac_test_16ch_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source dac_test_16ch_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100ms
+Note: CH0: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(0)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH1: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(1)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH2: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(2)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH3: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(3)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH4: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(4)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH5: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(5)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH6: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(6)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH7: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(7)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH8: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(8)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH9: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(9)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH10: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(10)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH11: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(11)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH12: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(12)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH13: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(13)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH14: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(14)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH15: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(15)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: --------------------------------------------------------------
+Time: 300100 ns  Iteration: 0  Process: /dac_test_16ch_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: TESTBENCH RESULT: ALL 16 CHANNELS PASSED
+Time: 300100 ns  Iteration: 0  Process: /dac_test_16ch_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: --------------------------------------------------------------
+Time: 300100 ns  Iteration: 0  Process: /dac_test_16ch_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+$stop called at time : 300100 ns : File "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd" Line 132
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dac_test_16ch_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100ms
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3479.453 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sim_1\new\Dac test 16ch tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test_16ch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Arvind\Projects\PMSS\VHDL\AB\13-08-2026\PMSS_AB_TEST\DAC_CONSTANT 16\DAC_CONSTANT.srcs\sources_1\new\dac_test.vhd:]
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Tue Aug 25 18:02:29 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'dac_test_16ch_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/AMDDesignTools/2026.1/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'dac_test_16ch_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj dac_test_16ch_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test_16ch.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dac_test_16ch'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dac_test_16ch_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Tue Aug 25 18:02:31 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'dac_test_16ch_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot dac_test_16ch_tb_behav xil_defaultlib.dac_test_16ch_tb -log elaborate.log"
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot dac_test_16ch_tb_behav xil_defaultlib.dac_test_16ch_tb -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.env
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_test_16ch [\dac_test_16ch(sim_mode=true)\]
+Compiling architecture behavior of entity xil_defaultlib.dac_test_16ch_tb
+Built simulation snapshot dac_test_16ch_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+Note: CH0: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(0)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH1: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(1)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH2: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(2)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH3: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(3)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH4: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(4)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH5: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(5)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH6: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(6)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH7: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(7)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH8: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(8)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH9: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(9)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH10: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(10)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH11: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(11)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH12: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(12)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH13: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(13)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH14: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(14)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH15: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(15)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: --------------------------------------------------------------
+Time: 300100 ns  Iteration: 0  Process: /dac_test_16ch_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: TESTBENCH RESULT: ALL 16 CHANNELS PASSED
+Time: 300100 ns  Iteration: 0  Process: /dac_test_16ch_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: --------------------------------------------------------------
+Time: 300100 ns  Iteration: 0  Process: /dac_test_16ch_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+$stop called at time : 300100 ns : File "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd" Line 143
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3479.453 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation  -mode behavioral
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Tue Aug 25 18:03:07 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'dac_test_16ch_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/AMDDesignTools/2026.1/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'dac_test_16ch_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj dac_test_16ch_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dac_test_16ch_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot dac_test_16ch_tb_behav xil_defaultlib.dac_test_16ch_tb -log elaborate.log"
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot dac_test_16ch_tb_behav xil_defaultlib.dac_test_16ch_tb -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.env
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_test_16ch [\dac_test_16ch(sim_mode=true)\]
+Compiling architecture behavior of entity xil_defaultlib.dac_test_16ch_tb
+Built simulation snapshot dac_test_16ch_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dac_test_16ch_tb_behav -key {Behavioral:sim_1:Functional:dac_test_16ch_tb} -tclbatch {dac_test_16ch_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source dac_test_16ch_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100ms
+Note: CH0: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(0)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH1: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(1)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH2: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(2)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH3: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(3)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH4: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(4)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH5: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(5)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH6: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(6)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH7: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(7)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH8: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(8)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH9: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(9)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH10: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(10)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH11: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(11)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH12: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(12)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH13: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(13)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH14: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(14)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: CH15: PASS (reset timing OK, power/range/DAC frames verified)
+Time: 119250 ns  Iteration: 2  Process: /dac_test_16ch_tb/\gen_monitors(15)\/monitor_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: --------------------------------------------------------------
+Time: 300100 ns  Iteration: 0  Process: /dac_test_16ch_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: TESTBENCH RESULT: ALL 16 CHANNELS PASSED
+Time: 300100 ns  Iteration: 0  Process: /dac_test_16ch_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+Note: --------------------------------------------------------------
+Time: 300100 ns  Iteration: 0  Process: /dac_test_16ch_tb/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd
+$stop called at time : 300100 ns : File "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sim_1/new/Dac test 16ch tb.vhd" Line 143
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dac_test_16ch_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100ms
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 3479.453 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-2
+Top: dac_test_16ch
+INFO: [Device 21-403] Loading part xc7a100tcsg324-2
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3479.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dac_test_16ch' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test_16ch.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1000110011001100 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized0' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1011111111111111 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized0' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized1' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1001001100110011 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized1' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized2' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1100011001100110 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized2' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized3' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1001100110011001 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized3' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized4' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1100110011001100 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized4' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized5' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1001111111111111 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized5' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized6' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1101001100110010 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized6' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized7' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1010011001100110 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized7' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized8' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1101100110011001 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized8' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized9' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1010110011001100 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized9' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized10' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1110011001100110 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized10' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized11' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1011001100110011 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized11' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized12' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1111001100110010 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized12' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized13' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1011100110011001 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized13' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dac_ad3551r_ch__parameterized14' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+	Parameter SIM_MODE bound to: 0 - type: bool 
+	Parameter RANGE_CODE bound to: 8'b00000100 
+	Parameter DAC_CODE bound to: 16'b1111111111111111 
+INFO: [Synth 8-256] done synthesizing module 'dac_ad3551r_ch__parameterized14' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'dac_test_16ch' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/sources_1/new/dac_test_16ch.vhd:36]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3479.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3479.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3479.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 3479.453 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:1]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:2]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:3]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:4]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:5]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:6]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'LATCH1_E'. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LATCH1_E'. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LATCH1_E'. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:79]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports LATCH1_E]'. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:79]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'LATCH1_E'. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:80]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports LATCH1_E]'. [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc:80]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/DAC_CONSTANT 16/DAC_CONSTANT.srcs/constrs_1/new/CH0.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3479.453 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 3479.453 ; gain = 0.000
+39 Infos, 4 Warnings, 11 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 3479.453 ; gain = 0.000
+close_design
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 25 18:05:16 2026...

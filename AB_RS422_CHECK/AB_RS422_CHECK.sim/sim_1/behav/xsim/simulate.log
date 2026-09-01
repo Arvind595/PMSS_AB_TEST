@@ -1,0 +1,26 @@
+Time resolution is 1 ps
+Note: --- STARTING TEST 0: waiting for unprompted boot message ---
+Time: 425914 ps  Iteration: 0  Process: /tb_rs422_docklight_test/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.srcs/sim_1/new/Tb_rs422_docklight_test.vhd
+Note: -> TEST 0 PASSED: boot message (11 22 33 44 55 66 77 88) received correctly.
+Time: 10689964550 ps  Iteration: 1  Process: /tb_rs422_docklight_test/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.srcs/sim_1/new/Tb_rs422_docklight_test.vhd
+Note: --- STARTING TEST 1: Docklight sends 8 bytes, expects identical echo ---
+Time: 10699964550 ps  Iteration: 0  Process: /tb_rs422_docklight_test/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.srcs/sim_1/new/Tb_rs422_docklight_test.vhd
+Note: -> TEST 1 PASSED: 8-byte frame echoed back identically.
+Time: 12080221918 ps  Iteration: 1  Process: /tb_rs422_docklight_test/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.srcs/sim_1/new/Tb_rs422_docklight_test.vhd
+Note: -> TEST 1: led_ok correctly asserted after round trip.
+Time: 12084457922 ps  Iteration: 2  Process: /tb_rs422_docklight_test/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.srcs/sim_1/new/Tb_rs422_docklight_test.vhd
+Note: --- STARTING TEST 2: Docklight sends 3 of 8 bytes then goes silent ---
+Time: 13094429922 ps  Iteration: 0  Process: /tb_rs422_docklight_test/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.srcs/sim_1/new/Tb_rs422_docklight_test.vhd
+Note: 3 bytes sent, PC gone silent. Waiting >5ms for led_err to latch...
+Time: 13354846572 ps  Iteration: 0  Process: /tb_rs422_docklight_test/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.srcs/sim_1/new/Tb_rs422_docklight_test.vhd
+Note: -> TEST 2 PASSED: led_err latched after inter-byte timeout.
+Time: 18350467654 ps  Iteration: 2  Process: /tb_rs422_docklight_test/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.srcs/sim_1/new/Tb_rs422_docklight_test.vhd
+Note: --- STARTING TEST 3: Clean frame after timeout should clear led_err ---
+Time: 18350467654 ps  Iteration: 2  Process: /tb_rs422_docklight_test/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.srcs/sim_1/new/Tb_rs422_docklight_test.vhd
+Note: -> TEST 3: recovery frame echoed back identically.
+Time: 19730711402 ps  Iteration: 1  Process: /tb_rs422_docklight_test/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.srcs/sim_1/new/Tb_rs422_docklight_test.vhd
+Note: -> TEST 3 PASSED: led_err cleared after a clean round trip.
+Time: 19734947406 ps  Iteration: 2  Process: /tb_rs422_docklight_test/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.srcs/sim_1/new/Tb_rs422_docklight_test.vhd
+Note: --- ALL TESTS COMPLETED ---
+Time: 19734947406 ps  Iteration: 2  Process: /tb_rs422_docklight_test/stim_proc  File: C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.srcs/sim_1/new/Tb_rs422_docklight_test.vhd
+$stop called at time : 19744947406 ps : File "C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.srcs/sim_1/new/Tb_rs422_docklight_test.vhd" Line 350

@@ -1,0 +1,34 @@
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot dac_test_16ch_tb_behav xil_defaultlib.dac_test_16ch_tb -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.env
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_ad3551r_ch [\dac_ad3551r_ch(sim_mode=true,da...]
+Compiling architecture behavioral of entity xil_defaultlib.dac_test_16ch [\dac_test_16ch(sim_mode=true)\]
+Compiling architecture behavior of entity xil_defaultlib.dac_test_16ch_tb
+Built simulation snapshot dac_test_16ch_tb_behav

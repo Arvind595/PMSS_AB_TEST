@@ -1,0 +1,209 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Wed Aug 26 11:44:52 2026
+| Host         : RTLPC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file dac_test_16ch_control_sets_placed.rpt
+| Design       : dac_test_16ch
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   131 |
+|    Minimum number of control sets                        |   131 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   599 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   131 |
+| >= 0 to < 4        |    48 |
+| >= 4 to < 6        |    33 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     8 |
+| >= 12 to < 14      |     5 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    34 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              73 |           34 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              57 |           33 |
+| Yes          | No                    | No                     |             353 |           82 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             646 |          213 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------+--------------------------------------------------------------+----------------------------------------------------+------------------+----------------+--------------+
+|        Clock Signal       |                         Enable Signal                        |                  Set/Reset Signal                  | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------+--------------------------------------------------------------+----------------------------------------------------+------------------+----------------+--------------+
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[1].ch_inst/sclk_int_i_2__0_n_0                  | gen_channels[1].ch_inst/sclk_int_i_1__0_n_0        |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[9].ch_inst/DAC_nCS_i_1__8_n_0                   | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[8].ch_inst/DAC_nRST_i_1__7_n_0                  | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[9].ch_inst/DAC_nRST_i_1__8_n_0                  | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[1].ch_inst/DAC_nCS_i_1__0_n_0                   | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[1].ch_inst/DAC_nRST_i_1__0_n_0                  | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[8].ch_inst/sclk_int_i_2__7_n_0                  | gen_channels[8].ch_inst/sclk_int_i_1__7_n_0        |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[9].ch_inst/sclk_int_i_2__8_n_0                  | gen_channels[9].ch_inst/sclk_int_i_1__8_n_0        |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[0].ch_inst/DAC_nCS_i_1_n_0                      | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[0].ch_inst/DAC_nRST_i_1_n_0                     | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[5].ch_inst/DAC_nRST_i_1__4_n_0                  | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[5].ch_inst/DAC_nCS_i_1__4_n_0                   | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[5].ch_inst/sclk_int_i_2__4_n_0                  | gen_channels[5].ch_inst/sclk_int_i_1__4_n_0        |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[6].ch_inst/DAC_nCS_i_1__5_n_0                   | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[10].ch_inst/DAC_nRST_i_1__9_n_0                 | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[10].ch_inst/DAC_nCS_i_1__9_n_0                  | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[11].ch_inst/sclk_int_i_2__10_n_0                | gen_channels[11].ch_inst/sclk_int_i_1__10_n_0      |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[6].ch_inst/DAC_nRST_i_1__5_n_0                  | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[6].ch_inst/sclk_int_i_2__5_n_0                  | gen_channels[6].ch_inst/sclk_int_i_1__5_n_0        |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[2].ch_inst/DAC_nCS_i_1__1_n_0                   | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[2].ch_inst/DAC_nRST_i_1__1_n_0                  | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[10].ch_inst/sclk_int_i_2__9_n_0                 | gen_channels[10].ch_inst/sclk_int_i_1__9_n_0       |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[2].ch_inst/sclk_int_i_2__1_n_0                  | gen_channels[2].ch_inst/sclk_int_i_1__1_n_0        |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[7].ch_inst/DAC_nCS_i_1__6_n_0                   | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[7].ch_inst/DAC_nRST_i_1__6_n_0                  | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[7].ch_inst/sclk_int_i_2__6_n_0                  | gen_channels[7].ch_inst/sclk_int_i_1__6_n_0        |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[4].ch_inst/DAC_nCS_i_1__3_n_0                   | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[4].ch_inst/DAC_nRST_i_1__3_n_0                  | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[11].ch_inst/DAC_nCS_i_1__10_n_0                 | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[11].ch_inst/DAC_nRST_i_1__10_n_0                | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[4].ch_inst/sclk_int_i_2__3_n_0                  | gen_channels[4].ch_inst/sclk_int_i_1__3_n_0        |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[13].ch_inst/sclk_int_i_2__12_n_0                | gen_channels[13].ch_inst/sclk_int_i_1__12_n_0      |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[14].ch_inst/DAC_nCS_i_1__13_n_0                 | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[14].ch_inst/DAC_nRST_i_1__13_n_0                | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[14].ch_inst/sclk_int_i_2__13_n_0                | gen_channels[14].ch_inst/sclk_int_i_1__13_n_0      |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[15].ch_inst/DAC_nCS_i_1__14_n_0                 | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[12].ch_inst/DAC_nRST_i_1__11_n_0                | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[12].ch_inst/DAC_nCS_i_1__11_n_0                 | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[15].ch_inst/DAC_nRST_i_1__14_n_0                | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[15].ch_inst/sclk_int_i_2__14_n_0                | gen_channels[15].ch_inst/sclk_int_i_1__14_n_0      |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[12].ch_inst/sclk_int_i_2__11_n_0                | gen_channels[12].ch_inst/sclk_int_i_1__11_n_0      |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[3].ch_inst/DAC_nRST_i_1__2_n_0                  | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[3].ch_inst/DAC_nCS_i_1__2_n_0                   | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[13].ch_inst/DAC_nRST_i_1__12_n_0                | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[3].ch_inst/sclk_int_i_2__2_n_0                  | gen_channels[3].ch_inst/sclk_int_i_1__2_n_0        |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[13].ch_inst/DAC_nCS_i_1__12_n_0                 | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[8].ch_inst/DAC_nCS_i_1__7_n_0                   | gen_channels[15].ch_inst/RST_SW                    |                1 |              1 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[0].ch_inst/sclk_int                             | gen_channels[0].ch_inst/sclk_int_i_1_n_0           |                2 |              2 |         1.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[12].ch_inst/FSM_sequential_state[3]_i_1__11_n_0 | gen_channels[15].ch_inst/RST_SW                    |                1 |              4 |         4.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[7].ch_inst/spi_bits_req[3]_i_1__6_n_0           |                                                    |                1 |              4 |         4.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[12].ch_inst/spi_bits_req[3]_i_1__11_n_0         |                                                    |                2 |              4 |         2.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[1].ch_inst/FSM_sequential_state[3]_i_1__0_n_0   | gen_channels[15].ch_inst/RST_SW                    |                2 |              4 |         2.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[0].ch_inst/FSM_sequential_state[3]_i_2_n_0      | gen_channels[15].ch_inst/RST_SW                    |                2 |              4 |         2.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[7].ch_inst/FSM_sequential_state[3]_i_1__6_n_0   | gen_channels[15].ch_inst/RST_SW                    |                1 |              4 |         4.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[6].ch_inst/FSM_sequential_state[3]_i_1__5_n_0   | gen_channels[15].ch_inst/RST_SW                    |                2 |              4 |         2.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[13].ch_inst/FSM_sequential_state[3]_i_1__12_n_0 | gen_channels[15].ch_inst/RST_SW                    |                1 |              4 |         4.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[15].ch_inst/FSM_sequential_state[3]_i_1__14_n_0 | gen_channels[15].ch_inst/RST_SW                    |                2 |              4 |         2.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[8].ch_inst/FSM_sequential_state[3]_i_1__7_n_0   | gen_channels[15].ch_inst/RST_SW                    |                1 |              4 |         4.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[9].ch_inst/FSM_sequential_state[3]_i_1__8_n_0   | gen_channels[15].ch_inst/RST_SW                    |                1 |              4 |         4.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[13].ch_inst/spi_bits_req[3]_i_1__12_n_0         |                                                    |                1 |              4 |         4.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[2].ch_inst/FSM_sequential_state[3]_i_1__1_n_0   | gen_channels[15].ch_inst/RST_SW                    |                1 |              4 |         4.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[9].ch_inst/spi_bits_req[3]_i_1__8_n_0           |                                                    |                1 |              4 |         4.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[2].ch_inst/spi_bits_req[3]_i_1__1_n_0           |                                                    |                2 |              4 |         2.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[5].ch_inst/FSM_sequential_state[3]_i_1__4_n_0   | gen_channels[15].ch_inst/RST_SW                    |                1 |              4 |         4.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[14].ch_inst/spi_bits_req[3]_i_1__13_n_0         |                                                    |                1 |              4 |         4.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[11].ch_inst/FSM_sequential_state[3]_i_1__10_n_0 | gen_channels[15].ch_inst/RST_SW                    |                2 |              4 |         2.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[10].ch_inst/FSM_sequential_state[3]_i_1__9_n_0  | gen_channels[15].ch_inst/RST_SW                    |                2 |              4 |         2.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[4].ch_inst/spi_bits_req[3]_i_1__3_n_0           |                                                    |                1 |              4 |         4.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[4].ch_inst/FSM_sequential_state[3]_i_1__3_n_0   | gen_channels[15].ch_inst/RST_SW                    |                1 |              4 |         4.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[14].ch_inst/FSM_sequential_state[3]_i_1__13_n_0 | gen_channels[15].ch_inst/RST_SW                    |                1 |              4 |         4.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[3].ch_inst/FSM_sequential_state[3]_i_1__2_n_0   | gen_channels[15].ch_inst/RST_SW                    |                1 |              4 |         4.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[1].ch_inst/spi_bits_req[3]_i_1__0_n_0           |                                                    |                2 |              5 |         2.50 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[11].ch_inst/spi_bits_req[3]_i_1__10_n_0         |                                                    |                2 |              5 |         2.50 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[3].ch_inst/spi_bits_req[3]_i_1__2_n_0           |                                                    |                1 |              5 |         5.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[8].ch_inst/spi_bits_req[3]_i_1__7_n_0           |                                                    |                1 |              5 |         5.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[0].ch_inst/spi_bits_req[3]_i_1_n_0              |                                                    |                1 |              5 |         5.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[6].ch_inst/spi_bits_req[3]_i_1__5_n_0           |                                                    |                1 |              5 |         5.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[5].ch_inst/spi_bits_req[3]_i_1__4_n_0           |                                                    |                2 |              5 |         2.50 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[15].ch_inst/spi_bits_req[3]_i_1__14_n_0         |                                                    |                2 |              5 |         2.50 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[15].ch_inst/tx_reg[21]_i_1__14_n_0              | gen_channels[15].ch_inst/spi_bit_cnt[2]_i_1__7_n_0 |                1 |              5 |         5.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[10].ch_inst/spi_bits_req[3]_i_1__9_n_0          |                                                    |                1 |              5 |         5.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[1].ch_inst/tx_reg[21]_i_1__0_n_0                | gen_channels[1].ch_inst/spi_bit_cnt[2]_i_1__14_n_0 |                2 |              6 |         3.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[6].ch_inst/tx_reg[21]_i_1__5_n_0                | gen_channels[6].ch_inst/spi_bit_cnt[2]_i_1__11_n_0 |                2 |              7 |         3.50 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[13].ch_inst/tx_reg[21]_i_1__12_n_0              | gen_channels[13].ch_inst/tx_reg[23]_i_1__6_n_0     |                2 |             10 |         5.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[14].ch_inst/tx_reg[21]_i_1__13_n_0              | gen_channels[14].ch_inst/spi_bit_cnt[2]_i_1__8_n_0 |                4 |             11 |         2.75 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[10].ch_inst/tx_reg[21]_i_1__9_n_0               | gen_channels[10].ch_inst/tx_reg[23]_i_1__4_n_0     |                4 |             11 |         2.75 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[9].ch_inst/tx_reg[21]_i_1__8_n_0                | gen_channels[9].ch_inst/spi_bit_cnt[2]_i_1__10_n_0 |                4 |             11 |         2.75 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[11].ch_inst/tx_reg[21]_i_1__10_n_0              | gen_channels[11].ch_inst/tx_reg[23]_i_1__5_n_0     |                3 |             11 |         3.67 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[5].ch_inst/tx_reg[21]_i_1__4_n_0                | gen_channels[5].ch_inst/tx_reg[23]_i_1__1_n_0      |                2 |             11 |         5.50 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[12].ch_inst/tx_reg[21]_i_1__11_n_0              | gen_channels[12].ch_inst/spi_bit_cnt[2]_i_1__9_n_0 |                5 |             11 |         2.20 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[7].ch_inst/tx_reg[21]_i_1__6_n_0                | gen_channels[7].ch_inst/tx_reg[23]_i_1__2_n_0      |                5 |             11 |         2.20 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[8].ch_inst/tx_reg[21]_i_1__7_n_0                | gen_channels[8].ch_inst/tx_reg[23]_i_1__3_n_0      |                5 |             12 |         2.40 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[0].ch_inst/tx_reg[21]_i_1_n_0                   | gen_channels[0].ch_inst/tx_reg[23]_i_1_n_0         |                2 |             12 |         6.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[2].ch_inst/tx_reg[21]_i_1__1_n_0                | gen_channels[2].ch_inst/spi_bit_cnt[2]_i_1__13_n_0 |                6 |             12 |         2.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[3].ch_inst/tx_reg[21]_i_1__2_n_0                | gen_channels[3].ch_inst/tx_reg[23]_i_1__0_n_0      |                3 |             12 |         4.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[4].ch_inst/tx_reg[21]_i_1__3_n_0                | gen_channels[4].ch_inst/spi_bit_cnt[2]_i_1__12_n_0 |                4 |             12 |         3.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[0].ch_inst/tx_reg[21]_i_1_n_0                   |                                                    |                5 |             15 |         3.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[10].ch_inst/tx_reg[21]_i_1__9_n_0               |                                                    |                4 |             16 |         4.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[2].ch_inst/tx_reg[21]_i_1__1_n_0                |                                                    |                4 |             16 |         4.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[4].ch_inst/tx_reg[21]_i_1__3_n_0                |                                                    |                3 |             16 |         5.33 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[8].ch_inst/tx_reg[21]_i_1__7_n_0                |                                                    |                4 |             16 |         4.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[5].ch_inst/tx_reg[21]_i_1__4_n_0                |                                                    |                3 |             16 |         5.33 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[3].ch_inst/tx_reg[21]_i_1__2_n_0                |                                                    |                3 |             16 |         5.33 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[11].ch_inst/tx_reg[21]_i_1__10_n_0              |                                                    |                4 |             17 |         4.25 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[14].ch_inst/tx_reg[21]_i_1__13_n_0              |                                                    |                4 |             17 |         4.25 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[9].ch_inst/tx_reg[21]_i_1__8_n_0                |                                                    |                4 |             17 |         4.25 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[12].ch_inst/tx_reg[21]_i_1__11_n_0              |                                                    |                4 |             17 |         4.25 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[7].ch_inst/tx_reg[21]_i_1__6_n_0                |                                                    |                4 |             17 |         4.25 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[13].ch_inst/tx_reg[21]_i_1__12_n_0              |                                                    |                3 |             18 |         6.00 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[6].ch_inst/tx_reg[21]_i_1__5_n_0                |                                                    |                4 |             21 |         5.25 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[1].ch_inst/tx_reg[21]_i_1__0_n_0                |                                                    |                3 |             22 |         7.33 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[11].ch_inst/delay_cnt[22]_i_1__10_n_0           | gen_channels[15].ch_inst/RST_SW                    |                6 |             23 |         3.83 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[10].ch_inst/delay_cnt[22]_i_1__9_n_0            | gen_channels[15].ch_inst/RST_SW                    |                5 |             23 |         4.60 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[1].ch_inst/delay_cnt[22]_i_1__0_n_0             | gen_channels[15].ch_inst/RST_SW                    |                5 |             23 |         4.60 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[15].ch_inst/delay_cnt[22]_i_1__14_n_0           | gen_channels[15].ch_inst/RST_SW                    |                5 |             23 |         4.60 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[9].ch_inst/delay_cnt[22]_i_1__8_n_0             | gen_channels[15].ch_inst/RST_SW                    |                6 |             23 |         3.83 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[6].ch_inst/delay_cnt[22]_i_1__5_n_0             | gen_channels[15].ch_inst/RST_SW                    |                5 |             23 |         4.60 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[4].ch_inst/delay_cnt[22]_i_1__3_n_0             | gen_channels[15].ch_inst/RST_SW                    |                5 |             23 |         4.60 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[8].ch_inst/delay_cnt[22]_i_1__7_n_0             | gen_channels[15].ch_inst/RST_SW                    |                7 |             23 |         3.29 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[3].ch_inst/delay_cnt[22]_i_1__2_n_0             | gen_channels[15].ch_inst/RST_SW                    |                5 |             23 |         4.60 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[13].ch_inst/delay_cnt[22]_i_1__12_n_0           | gen_channels[15].ch_inst/RST_SW                    |                6 |             23 |         3.83 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[14].ch_inst/delay_cnt[22]_i_1__13_n_0           | gen_channels[15].ch_inst/RST_SW                    |                5 |             23 |         4.60 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[15].ch_inst/tx_reg[21]_i_1__14_n_0              |                                                    |                4 |             23 |         5.75 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[0].ch_inst/delay_cnt[22]_i_1_n_0                | gen_channels[15].ch_inst/RST_SW                    |                6 |             23 |         3.83 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[7].ch_inst/delay_cnt[22]_i_1__6_n_0             | gen_channels[15].ch_inst/RST_SW                    |                5 |             23 |         4.60 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[12].ch_inst/delay_cnt[22]_i_1__11_n_0           | gen_channels[15].ch_inst/RST_SW                    |                6 |             23 |         3.83 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[2].ch_inst/delay_cnt[22]_i_1__1_n_0             | gen_channels[15].ch_inst/RST_SW                    |                6 |             23 |         3.83 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG | gen_channels[5].ch_inst/delay_cnt[22]_i_1__4_n_0             | gen_channels[15].ch_inst/RST_SW                    |                5 |             23 |         4.60 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG |                                                              | hb_val                                             |                7 |             25 |         3.57 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG |                                                              | gen_channels[15].ch_inst/RST_SW                    |               26 |             32 |         1.23 |
+|  FPGA_CLK_50MHZ_IBUF_BUFG |                                                              |                                                    |               34 |             73 |         2.15 |
++---------------------------+--------------------------------------------------------------+----------------------------------------------------+------------------+----------------+--------------+
+
+

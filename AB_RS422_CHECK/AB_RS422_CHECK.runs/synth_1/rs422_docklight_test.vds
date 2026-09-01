@@ -1,0 +1,315 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 06-aug-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sat Aug 29 10:11:28 2026
+# Process ID         : 7128
+# Current directory  : C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.runs/synth_1
+# Command line       : vivado.exe -log rs422_docklight_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rs422_docklight_test.tcl
+# Log file           : C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.runs/synth_1/rs422_docklight_test.vds
+# Journal file       : C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.runs/synth_1\vivado.jou
+# Running On         : RTLPC
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-14700
+# CPU Frequency      : 2112 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 16851 MB
+# Swap memory        : 9126 MB
+# Total Virtual      : 25978 MB
+# Available Virtual  : 6950 MB
+#-----------------------------------------------------------
+source rs422_docklight_test.tcl -notrace
+Command: synth_design -top rs422_docklight_test -part xc7a100tcsg324-2
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-2
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3572
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1363.367 ; gain = 576.441
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'rs422_docklight_test' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.srcs/sources_1/imports/src/rs422_docklight_test.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'rs422_packet_controller' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.srcs/sources_1/imports/src/rs422_packet_controller.vhd:38]
+	Parameter CLK_FREQ bound to: 50000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter NUM_BYTES bound to: 8 - type: integer 
+	Parameter TIMEOUT_MS bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'uart_phy' [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.srcs/sources_1/imports/src/uart_phy.vhd:28]
+	Parameter CLK_FREQ bound to: 50000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_phy' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.srcs/sources_1/imports/src/uart_phy.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'rs422_packet_controller' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.srcs/sources_1/imports/src/rs422_packet_controller.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'rs422_docklight_test' (0#1) [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.srcs/sources_1/imports/src/rs422_docklight_test.vhd:77]
+WARNING: [Synth 8-3917] design rs422_docklight_test has port rs422_en driven by constant 1
+WARNING: [Synth 8-3917] design rs422_docklight_test has port rs422_nen driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1496.320 ; gain = 709.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1496.320 ; gain = 709.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1496.320 ; gain = 709.395
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1496.320 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.srcs/constrs_1/new/rs422check.xdc]
+Finished Parsing XDC File [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.srcs/constrs_1/new/rs422check.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.srcs/constrs_1/new/rs422check.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rs422_docklight_test_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/rs422_docklight_test_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1565.055 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1565.715 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1565.715 ; gain = 778.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1565.715 ; gain = 778.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1565.715 ; gain = 778.789
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'uart_phy'
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'uart_phy'
+INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'rs422_packet_controller'
+INFO: [Synth 8-802] inferred FSM for state register 'echo_state_reg' in module 'rs422_docklight_test'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+               start_bit |                               01 |                               01
+               data_bits |                               10 |                               10
+                stop_bit |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tx_state_reg' using encoding 'sequential' in module 'uart_phy'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+               start_bit |                               01 |                               01
+               data_bits |                               10 |                               10
+                stop_bit |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'uart_phy'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+               send_byte |                              010 |                               01
+          wait_byte_done |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tx_state_reg' using encoding 'one-hot' in module 'rs422_packet_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               boot_wait |                           000001 |                              000
+               boot_send |                           000010 |                              001
+          boot_wait_done |                           000100 |                              010
+                    idle |                           001000 |                              011
+                    send |                           010000 |                              100
+               wait_done |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'echo_state_reg' using encoding 'one-hot' in module 'rs422_docklight_test'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1565.715 ; gain = 778.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   26 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 2     
++---Registers : 
+	               26 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 36    
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input   26 Bit        Muxes := 1     
+	   2 Input   25 Bit        Muxes := 1     
+	   4 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 18    
+	   4 Input    8 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 6     
+	   6 Input    8 Bit        Muxes := 8     
+	   6 Input    6 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 13    
+	   2 Input    1 Bit        Muxes := 10    
+	   3 Input    1 Bit        Muxes := 6     
+	   6 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design rs422_docklight_test has port rs422_en driven by constant 1
+WARNING: [Synth 8-3917] design rs422_docklight_test has port rs422_nen driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1578.375 ; gain = 791.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1719.895 ; gain = 932.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1744.984 ; gain = 958.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1755.133 ; gain = 968.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2009.090 ; gain = 1222.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2009.090 ; gain = 1222.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2009.090 ; gain = 1222.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2009.090 ; gain = 1222.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2009.090 ; gain = 1222.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2009.090 ; gain = 1222.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    19|
+|3     |LUT1   |    32|
+|4     |LUT2   |    76|
+|5     |LUT3   |    38|
+|6     |LUT4   |    19|
+|7     |LUT5   |    27|
+|8     |LUT6   |   126|
+|9     |MUXF7  |     8|
+|10    |FDRE   |   396|
+|11    |FDSE   |    11|
+|12    |IBUF   |     3|
+|13    |OBUF   |     5|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2009.090 ; gain = 1222.164
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 2009.090 ; gain = 1152.770
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2009.090 ; gain = 1222.164
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2018.230 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2021.934 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 57a49958
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+30 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2021.949 ; gain = 1436.441
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2021.949 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Arvind/Projects/PMSS/VHDL/AB/13-08-2026/PMSS_AB_TEST/AB_RS422_CHECK/AB_RS422_CHECK.runs/synth_1/rs422_docklight_test.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file rs422_docklight_test_utilization_synth.rpt -pb rs422_docklight_test_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 29 10:11:57 2026...

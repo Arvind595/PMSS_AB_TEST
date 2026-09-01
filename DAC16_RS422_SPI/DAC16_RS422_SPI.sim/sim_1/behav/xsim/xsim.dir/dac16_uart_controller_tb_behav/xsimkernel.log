@@ -1,0 +1,7 @@
+Running: xsim.dir/dac16_uart_controller_tb_behav/xsimk.exe -simmode gui -wdb dac16_uart_controller_tb_behav.wdb -simrunnum 0 -socket 60801
+Design successfully loaded
+Design Loading Memory Usage: 19360 KB (Peak: 19360 KB)
+Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 27964 KB (Peak: 27964 KB)
+Simulation CPU Usage: 1764 ms
